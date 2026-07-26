@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-50: #F4F7F2;
+  --color-forest-100: #E6EFE1;
+  --color-forest-200: #D1E1CA;
+  --color-forest-300: #B2CDA8;
+  --color-forest-400: #8EB482;
+  --color-forest-500: #2D5016;
+  --color-forest-600: #1F3D0C;
+  --color-forest-700: #172F09;
+  --color-forest-800: #132407;
+  --color-forest-900: #0F1F06;
+
+  --color-gold-100: #FBF7E9;
+  --color-gold-200: #F3E6BF;
+  --color-gold-300: #E3CD86;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #C9A227;
+  --color-gold-600: #B8940F;
+  --color-gold-700: #96780C;
+
+  --color-charcoal-600: #2C344A;
+  --color-charcoal-700: #1E2434;
+  --color-charcoal-800: #151924;
+  --color-charcoal-900: #10131B;
+  --color-charcoal-950: #090B10;
+
+  --color-warm-50: #FAFAF8;
+  --color-warm-100: #F5F4F0;
+  --color-warm-200: #E6E4DD;
+  --color-warm-300: #CCCCCC;
+  --color-warm-400: #9E9B94;
+
+  --font-serif: var(--font-serif-cormorant), ui-serif, Georgia, serif;
+  --font-sans: var(--font-sans-dm), ui-sans-serif, system-ui, sans-serif;
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+
+  --radius-4xl: 2rem;
+  --radius-5xl: 2.5rem;
+
+  --breakpoint-xs: 375px;
+  --breakpoint-3xl: 1920px;
+}
+
+:root {
+  --color-forest: #2D5016;
+  --color-gold: #D4AF37;
+  --color-bg: #FFFFFF;
+  --color-charcoal: #1A1A1A;
+  --color-warm-gray: #9E9B94;
+  --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animations */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+
+.luxury-maplibre-popup .maplibregl-popup-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+.luxury-maplibre-popup .maplibregl-popup-tip {
+  border-top-color: #0f172a !important;
+}
+
+/* Smooth scroll + offset for fixed header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}

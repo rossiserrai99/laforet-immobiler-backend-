@@ -1,0 +1,25 @@
+import api from '../lib/api';
+
+const authService = {
+  login: async (email, password) => {
+    const response = await api.post('/auth/login', { email, password });
+    return response.data;
+  },
+
+  logout: async () => {
+    const response = await api.post('/auth/logout');
+    return response.data;
+  },
+
+  getMe: async () => {
+    const response = await api.get('/auth/me');
+    return response.data;
+  },
+
+  updateCredentials: async (data) => {
+    const response = await api.put('/auth/update-credentials', data);
+    return response.data;
+  }
+};
+
+export default authService;
