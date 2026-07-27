@@ -12,6 +12,9 @@ const AppError = require('./src/utils/AppError');
 
 const app = express();
 
+// Trust proxy for secure cookies behind reverse proxies (Vercel/Render/Cloudflare)
+app.set('trust proxy', 1);
+
 // Security HTTP headers
 // Custom CSP allowing Cloudinary and Google Fonts
 app.use(helmet({
@@ -26,19 +29,32 @@ app.use(helmet({
   },
 }));
 
-// CORS - Support localhost, 127.0.0.1, and FRONTEND_URL
+// CORS - Support localhost, 127.0.0.1, FRONTEND_URL, and deployment domains
 const allowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
   'http://localhost:3001',
   'http://127.0.0.1:3001',
+  'https://laforet-immobiler.onrender.com',
+  'https://laforet-immobilier.onrender.com',
+  'https://laforet-immobiler-backend.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
 app.use(cors({ 
   origin: (origin, callback) => {
-    // Allow requests with no origin or if origin is in allowedOrigins or in development mode
-    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+    // Allow requests with no origin or matching allowedOrigins or Render / Vercel deployment URLs
+    const isAllowed = !origin || 
+      allowedOrigins.some(o => origin === o || origin === o.replace(/\/$/, '')) ||
+      origin.includes('laforet-immobiler') ||
+      origin.includes('laforet-immobilier') ||
+      origin.includes('localhost') ||
+      origin.includes('127.0.0.1') ||
+      origin.endsWith('.onrender.com') ||
+      origin.endsWith('.vercel.app') ||
+      process.env.NODE_ENV !== 'production';
+
+    if (isAllowed) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));

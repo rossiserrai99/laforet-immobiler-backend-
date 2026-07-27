@@ -10,8 +10,14 @@ import adminService from '@/services/admin.service';
 
 export function Sidebar() {
   const pathname = usePathname();
-  const { logout } = useAdminAuth();
+  const { logout, fetchMe, isAuthenticated, admin } = useAdminAuth();
   const [newLeadsCount, setNewLeadsCount] = useState(0);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      fetchMe();
+    }
+  }, [isAuthenticated, fetchMe]);
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -109,8 +115,8 @@ export function Sidebar() {
               LF
             </div>
             <div className="min-w-0">
-              <p className="text-xs font-semibold text-white truncate">Direction La Forêt</p>
-              <p className="text-[10px] text-warm-400 truncate">Administrateur</p>
+              <p className="text-xs font-semibold text-white truncate">{admin?.name || 'Direction La Forêt'}</p>
+              <p className="text-[10px] text-warm-400 truncate">{admin?.email || 'Administrateur'}</p>
             </div>
           </div>
         </div>

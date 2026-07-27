@@ -5,6 +5,20 @@ const api = axios.create({
   withCredentials: true, // Crucial for sending/receiving cookies
 });
 
+// Attach token from localStorage as fallback for cross-domain deployments (Render frontend <-> Vercel backend)
+api.interceptors.request.use(
+  (config) => {
+    if (typeof window !== 'undefined') {
+      const token = localStorage.getItem('laforet_token');
+      if (token && !config.headers.Authorization) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
 // Intercept responses to handle 401 Unauthorized globally
 api.interceptors.response.use(
   (response) => response,

@@ -1,14 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { useAdminStore } from '../store/adminStore';
 import authService from '../services/auth.service';
 
 export const useAdminAuth = () => {
   const { admin, isAuthenticated, isLoading, setAdmin, clearAdmin, setLoading } = useAdminStore();
 
-  const login = async (email, password) => {
+  const login = useCallback(async (email, password) => {
     setLoading(true);
     try {
       const { data } = await authService.login(email, password);
+      if (data?.token && typeof window !== 'undefined') {
+        localStorage.setItem('laforet_token', data.token);
+        const isHttps = window.location.protocol === 'https:';
+        document.cookie = `laforet_token=${data.token}; path=/; max-age=604800; SameSite=Lax${isHttps ? '; Secure' : ''}`;
+      }
       setAdmin(data.admin);
       return { success: true };
     } catch (error) {
@@ -18,17 +23,17 @@ export const useAdminAuth = () => {
         message: error.response?.data?.message || 'Erreur lors de la connexion' 
       };
     }
-  };
+  }, [setLoading, setAdmin, clearAdmin]);
 
-  const logout = async () => {
+  const logout = useCallback(async () => {
     try {
       await authService.logout();
     } finally {
       clearAdmin();
     }
-  };
+  }, [clearAdmin]);
 
-  const fetchMe = async () => {
+  const fetchMe = useCallback(async () => {
     setLoading(true);
     try {
       const { data } = await authService.getMe();
@@ -36,7 +41,7 @@ export const useAdminAuth = () => {
     } catch (error) {
       clearAdmin();
     }
-  };
+  }, [setLoading, setAdmin, clearAdmin]);
 
   return {
     admin,

@@ -13,18 +13,19 @@ const signToken = (id) => {
 const createSendToken = (admin, statusCode, res) => {
   const token = signToken(admin._id);
 
+  const isSecure = process.env.NODE_ENV === 'production' || res.req?.secure || res.req?.headers['x-forwarded-proto'] === 'https';
   const cookieOptions = {
     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+    secure: isSecure,
+    sameSite: isSecure ? 'none' : 'lax'
   };
 
   res.cookie('laforet_token', token, cookieOptions);
 
   admin.password = undefined; // Remove password from output
 
-  sendSuccess(res, statusCode, { admin });
+  sendSuccess(res, statusCode, { admin, token });
 };
 
 exports.login = asyncHandler(async (req, res, next) => {
@@ -44,9 +45,12 @@ exports.login = asyncHandler(async (req, res, next) => {
 });
 
 exports.logout = (req, res) => {
+  const isSecure = process.env.NODE_ENV === 'production' || req.secure || req.headers['x-forwarded-proto'] === 'https';
   res.cookie('laforet_token', 'loggedout', {
     expires: new Date(Date.now() + 10 * 1000),
-    httpOnly: true
+    httpOnly: true,
+    secure: isSecure,
+    sameSite: isSecure ? 'none' : 'lax'
   });
   sendSuccess(res, 200, null, 'Déconnexion réussie.');
 };
