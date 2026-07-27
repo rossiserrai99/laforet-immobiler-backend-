@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, Search } from 'lucide-react';
+import { Menu, Search, Shield } from 'lucide-react';
 import { MobileMenu } from './MobileMenu';
 import { Button, Logo } from '@/components/ui';
 
@@ -78,10 +78,11 @@ export function Header() {
                   `}
                 />
               </div>
-              <Link href="/estimation" className="hidden lg:flex">
-                <Button variant={showLightNavbar ? 'primary' : 'gold'} className="rounded-full px-6 shadow-lg transition-all duration-300">
-                  Estimer
-                </Button>
+              <Link href="/admin/login" className="hidden lg:flex">
+                <button className="flex items-center gap-2 rounded-full px-5 py-2.5 bg-[#1B4D2E]/90 hover:bg-[#133E26] text-white text-sm font-medium border border-[#2D5A43]/60 shadow-md hover:shadow-lg transition-all duration-300 backdrop-blur-md">
+                  <Shield size={15} className="text-white/90" />
+                  <span>Espace administrateur</span>
+                </button>
               </Link>
             </div>
 

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button, Logo } from '@/components/ui';
-import { Phone, Mail, X } from 'lucide-react';
+import { Phone, Mail, X, Shield } from 'lucide-react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export function MobileMenu({ isOpen, onClose }) {
@@ -92,10 +92,11 @@ export function MobileMenu({ isOpen, onClose }) {
               transition={{ duration: 0.4, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="mt-auto space-y-6 pt-6 border-t border-white/10"
             >
-              <Link href="/estimation" onClick={onClose} className="block w-full">
-                <Button variant="gold" className="w-full py-4 text-lg font-semibold rounded-2xl shadow-[0_0_30px_rgba(212,175,55,0.3)]">
-                  Estimer mon bien
-                </Button>
+              <Link href="/admin/login" onClick={onClose} className="block w-full">
+                <button className="w-full flex items-center justify-center gap-2.5 py-4 bg-[#1B4D2E]/90 hover:bg-[#133E26] text-white text-base font-medium rounded-2xl border border-[#2D5A43]/60 shadow-md transition-all duration-300">
+                  <Shield size={18} className="text-white/90" />
+                  <span>Espace administrateur</span>
+                </button>
               </Link>
 
               <div className="flex flex-col gap-4">
