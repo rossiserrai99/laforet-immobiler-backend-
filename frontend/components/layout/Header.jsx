@@ -17,7 +17,7 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15);
+      setIsScrolled(window.scrollY > 20);
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -28,22 +28,22 @@ export function Header() {
 
   return (
     <>
-      {/* Fixed top wrapper with stable padding so no horizontal jump occurs */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-3 px-3 sm:pt-4 sm:px-6 pointer-events-none transition-all duration-500">
+      {/* iOS Liquid Glass Wrapper */}
+      <div className={`fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${showLightNavbar ? 'pt-4 px-4' : 'pt-0 px-0'}`}>
         <header 
-          className={`w-full max-w-6xl pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] origin-top ${
             showLightNavbar 
-              ? 'bg-white/90 backdrop-blur-xl border border-charcoal-200/60 shadow-[0_10px_35px_-5px_rgba(0,0,0,0.08)] rounded-2xl sm:rounded-3xl py-2.5 px-4 sm:py-3.5 sm:px-8' 
-              : 'bg-transparent border border-transparent shadow-none rounded-2xl sm:rounded-3xl py-3 px-4 sm:py-5 sm:px-8'
+              ? 'w-full max-w-6xl bg-white/85 backdrop-blur-2xl border border-white/60 shadow-[0_12px_40px_0_rgba(0,0,0,0.08)] rounded-[2rem] py-2 px-6' 
+              : 'w-full max-w-full bg-transparent rounded-none border-transparent shadow-none py-5 px-6 md:py-6 md:px-12'
           }`}
         >
           <div className="flex items-center justify-between">
-            {/* Logo with clean height transition (no CSS scale to avoid SVG mobile jank) */}
+            {/* Logo */}
             <Link href="/" className="group flex items-center flex-shrink-0">
               <Logo 
                 variant={showLightNavbar ? 'default' : 'light'}
                 className={`w-auto transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                  showLightNavbar ? 'h-7 sm:h-9 md:h-10' : 'h-9 sm:h-11 md:h-12 drop-shadow-sm'
+                  showLightNavbar ? 'h-10' : 'h-14 sm:h-16 scale-105 sm:scale-110 origin-left drop-shadow-sm'
                 }`}
               />
             </Link>
@@ -87,13 +87,9 @@ export function Header() {
 
             {/* Mobile Menu Trigger */}
             <button 
-              className={`md:hidden p-2.5 -mr-1 rounded-full cursor-pointer transition-all duration-200 active:scale-95 ${
-                showLightNavbar 
-                  ? 'text-charcoal-900 hover:bg-charcoal-100/70' 
-                  : 'text-white hover:bg-white/10'
-              }`}
+              className={`md:hidden p-2 -mr-2 cursor-pointer transition-colors ${showLightNavbar ? 'text-charcoal-900' : 'text-white'}`}
               onClick={() => setIsMobileMenuOpen(true)}
-              aria-label="Ouvrir le menu"
+              aria-label="Open menu"
             >
               <Menu size={24} />
             </button>
@@ -105,4 +101,5 @@ export function Header() {
     </>
   );
 }
+
 
