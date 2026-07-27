@@ -82,8 +82,42 @@
   border-top-color: #0f172a !important;
 }
 
-/* Smooth scroll + offset for fixed header */
+/* Optimized scrolling: Native GPU-accelerated touch momentum on Android & iOS mobile, Smooth on Desktop */
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
+  text-size-adjust: 100%;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+}
+
+/* Force hardware GPU acceleration for animated sections and cards on Android */
+.property-card-anim,
+.service-card-anim,
+.reveal-section,
+.hero-text-anim,
+.hero-btn-anim {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+/* Ensure horizontal scrolling elements never trap vertical finger scrolling on Android */
+.overflow-x-auto {
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
 }

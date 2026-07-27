@@ -15,6 +15,13 @@ import { AgencyLocationMap } from '@/components/map/AgencyLocationMap';
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Prevent Android address bar resize jank & ensure native hardware GPU scroll momentum
+if (typeof window !== 'undefined') {
+  ScrollTrigger.config({
+    ignoreMobileResize: true,
+  });
+}
+
 export function HomeClient({ featuredProperties, featuredApartments = [], allProperties = [] }) {
   const container = useRef();
   
@@ -27,14 +34,16 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
       duration: 1,
       stagger: 0.2,
       ease: 'power4.out',
-      delay: 0.2
+      delay: 0.2,
+      clearProps: 'transform'
     })
     .from('.hero-btn-anim', {
       y: 20,
       opacity: 0,
       duration: 0.8,
       stagger: 0.1,
-      ease: 'power3.out'
+      ease: 'power3.out',
+      clearProps: 'transform'
     }, "-=0.4");
 
     // Scroll Reveal for Sections
@@ -51,7 +60,8 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
           y: 0,
           opacity: 1,
           duration: 0.8,
-          ease: 'power3.out'
+          ease: 'power3.out',
+          clearProps: 'transform'
         }
       );
     });
@@ -69,7 +79,8 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         opacity: 1,
         duration: 0.7,
         stagger: 0.1,
-        ease: 'power3.out'
+        ease: 'power3.out',
+        clearProps: 'transform'
       }
     );
 
