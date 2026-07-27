@@ -38,6 +38,8 @@ const allowedOrigins = [
   'https://laforet-immobiler.onrender.com',
   'https://laforet-immobilier.onrender.com',
   'https://laforet-immobiler-backend.vercel.app',
+  'https://agenceimmobiliere-laforet.online',
+  'https://www.agenceimmobiliere-laforet.online',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
@@ -46,6 +48,7 @@ app.use(cors({
     // Allow requests with no origin or matching allowedOrigins or Render / Vercel deployment URLs
     const isAllowed = !origin || 
       allowedOrigins.some(o => origin === o || origin === o.replace(/\/$/, '')) ||
+      origin.includes('agenceimmobiliere-laforet') ||
       origin.includes('laforet-immobiler') ||
       origin.includes('laforet-immobilier') ||
       origin.includes('localhost') ||
