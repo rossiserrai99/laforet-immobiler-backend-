@@ -65,12 +65,24 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
       ease: 'power3.out'
     });
 
+    // Stagger Service Cards quickly without delays
+    gsap.from('.service-card-anim', {
+      scrollTrigger: {
+        trigger: '#services',
+        start: 'top 92%',
+      },
+      y: 20,
+      opacity: 0,
+      duration: 0.45,
+      stagger: 0.08,
+      ease: 'power2.out'
+    });
   }, { scope: container });
 
   return (
     <div ref={container}>
       {/* HERO SECTION */}
-      <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] sm:h-[75vh] md:h-[85vh] min-h-[420px] sm:min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 bg-charcoal-900 z-0 overflow-hidden">
           <video
@@ -91,20 +103,25 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 text-center px-4 max-w-5xl mx-auto mt-16 pb-16">
-          <div className="hero-text-anim overflow-hidden px-4 py-6 -mx-4 -my-6">
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight mb-8 drop-shadow-2xl">
-              L&apos;Excellence <span className="text-gold-400 italic font-extrabold drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] pr-2">Immobilière</span><br/>en Algérie
+        <div className="relative z-20 text-center px-3 sm:px-4 max-w-5xl mx-auto mt-10 sm:mt-16 pb-10 sm:pb-16">
+          <div className="hero-text-anim overflow-hidden px-2 sm:px-4 py-4 sm:py-6">
+            <h1 className="font-serif font-semibold text-white mb-6 sm:mb-8 drop-shadow-2xl flex flex-col items-center">
+              <span className="text-[26px] xs:text-[28px] sm:text-5xl md:text-6xl lg:text-7xl tracking-tight whitespace-nowrap text-white/95 leading-tight">
+                L&apos;Excellence <span className="text-gold-400 font-serif italic font-bold drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Immobilière</span>
+              </span>
+              <span className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-serif text-white/90 mt-1 sm:mt-2 text-center tracking-wide font-normal">
+                en Algérie
+              </span>
             </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="hero-btn-anim">
               <Button variant="gold" size="lg" className="shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-shadow" asChild>
                 <Link href="/properties">Explorer les biens</Link>
               </Button>
             </div>
-            <div className="hero-btn-anim">
+            <div className="hero-btn-anim hidden sm:block">
               <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white border-white/50 hover:bg-white hover:text-charcoal-900 transition-all" asChild>
                 <Link href="/estimation">Estimer mon bien</Link>
               </Button>
@@ -360,8 +377,7 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         </div>
       </section>
 
-      {/* SERVICES OVERVIEW SECTION (Enhanced) */}
-      <section id="services" className="py-28 relative bg-charcoal-950 text-white overflow-hidden">
+      <section id="services" className="py-16 md:py-28 relative bg-charcoal-950 text-white overflow-hidden">
         {/* High-Quality Fixed Parallax Background Image */}
         <div 
           className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
@@ -372,50 +388,53 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-500/15 via-transparent to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-20 reveal-section">
-            <p className="text-gold-400 font-medium tracking-wider text-sm uppercase mb-3">Notre Expertise</p>
-            <h2 className="font-sans text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 drop-shadow-md">Un accompagnement sur-mesure</h2>
-            <div className="w-20 h-1 bg-gold-500 mx-auto mb-6"></div>
-            <p className="text-warm-300 text-lg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-20 reveal-section">
+            <p className="text-gold-400 font-medium tracking-wider text-xs sm:text-sm uppercase mb-2 sm:mb-3">Notre Expertise</p>
+            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 drop-shadow-md">Un accompagnement sur-mesure</h2>
+            <div className="w-16 sm:w-20 h-1 bg-gold-500 mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-warm-300 text-sm sm:text-lg">
               LA FORÊT met à votre disposition son savoir-faire et son réseau exclusif pour concrétiser vos projets immobiliers avec discrétion et professionnalisme.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Liquid Smoked Glass Service Cards for High-Contrast Legibility */}
-            <div className="reveal-section bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          {/* 2 cards in one horizontal line on mobile (grid-cols-2), 3rd card right under them (col-span-2 on mobile, col-span-1 on desktop) */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+            {/* Card 1: Achat & Vente */}
+            <div className="service-card-anim bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 sm:p-6 md:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-4 sm:mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-white mb-4">Achat & Vente</h3>
-              <p className="text-warm-200 leading-relaxed font-light">
+              <h3 className="font-serif text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">Achat & Vente</h3>
+              <p className="text-warm-200 leading-relaxed font-light text-xs sm:text-sm md:text-base">
                 Des biens d&apos;exception rigoureusement sélectionnés. Nous vous accompagnons de la recherche jusqu&apos;à la signature finale avec un service conciergerie.
               </p>
             </div>
 
-            <div className="reveal-section bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group" style={{transitionDelay: '100ms'}}>
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest-400 to-forest-600 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {/* Card 2: Estimation Offerte */}
+            <div className="service-card-anim bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 sm:p-6 md:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-forest-400 to-forest-600 flex items-center justify-center mb-4 sm:mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-white mb-4">Estimation Offerte</h3>
-              <p className="text-warm-200 leading-relaxed font-light">
+              <h3 className="font-serif text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">Estimation Offerte</h3>
+              <p className="text-warm-200 leading-relaxed font-light text-xs sm:text-sm md:text-base">
                 Une évaluation précise, confidentielle et gratuite de votre bien, basée sur notre parfaite connaissance du marché immobilier premium.
               </p>
             </div>
 
-            <div className="reveal-section bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group" style={{transitionDelay: '200ms'}}>
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-warm-400 to-warm-600 flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {/* Card 3: Location Prestige (col-span-2 on mobile so it sits right under Cards 1 and 2, col-span-1 on desktop) */}
+            <div className="service-card-anim col-span-2 md:col-span-1 bg-charcoal-950/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 sm:p-6 md:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.6)] hover:bg-charcoal-950/90 hover:border-gold-400/40 transition-all duration-500 group">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-warm-400 to-warm-600 flex items-center justify-center mb-4 sm:mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-white mb-4">Location Prestige</h3>
-              <p className="text-warm-200 leading-relaxed font-light">
+              <h3 className="font-serif text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">Location Prestige</h3>
+              <p className="text-warm-200 leading-relaxed font-light text-xs sm:text-sm md:text-base">
                 Un service dédié aux locataires exigeants et aux propriétaires souhaitant louer leur bien exceptionnel en toute sérénité.
               </p>
             </div>
@@ -480,112 +499,113 @@ function ContactUsSection() {
         </div>
 
         {/* Light Dark Tinted Glassmorph Board (Exactly like the Map Section) */}
-        <div className="relative rounded-[32px] md:rounded-[36px] bg-charcoal-900/70 backdrop-blur-3xl border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),_0_25px_80px_-15px_rgba(0,0,0,0.85)] p-6 md:p-14 text-white reveal-section transition-all duration-500">
+        <div className="relative rounded-[24px] sm:rounded-[32px] md:rounded-[36px] bg-charcoal-900/70 backdrop-blur-3xl border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),_0_25px_80px_-15px_rgba(0,0,0,0.85)] p-4 sm:p-8 md:p-14 text-white reveal-section transition-all duration-500">
           
           {/* Subtle upper reflection highlight */}
           <div className="absolute top-0 left-10 right-10 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none"></div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start relative z-10">
             
-            {/* Left Column: Direct VIP Channels & Address */}
-            <div className="lg:col-span-5 space-y-6">
+            {/* Left Column: Direct VIP Channels & Address (2 in one horizontal line on mobile) */}
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6">
               <div>
-                <h3 className="font-sans text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-2">
+                <h3 className="font-sans text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-1.5 sm:mb-2">
                   Coordonnées Directes
                 </h3>
-                <p className="text-warm-300 font-sans text-sm md:text-base leading-relaxed">
+                <p className="text-warm-300 font-sans text-xs sm:text-sm md:text-base leading-relaxed">
                   Des canaux de contact officiels pour un échange rapide et discret.
                 </p>
               </div>
 
-              <div className="space-y-4 pt-2">
+              {/* 2 contact icons in one horizontal line on mobile (grid-cols-2) */}
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-4 pt-1 sm:pt-2">
                 {/* Official WhatsApp VIP Card */}
                 <a
                   href="https://wa.me/213550593707"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#25D366]/50 transition-all duration-300 group"
+                  className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 sm:p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#25D366]/50 transition-all duration-300 group gap-2 sm:gap-0"
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
                       {/* Official WhatsApp SVG Logo (Bubble + Handset) */}
-                      <svg className="w-7 h-7 text-[#25D366] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="w-5 h-5 sm:w-7 sm:h-7 text-[#25D366]" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                       </svg>
                     </div>
                     <div>
-                      <div className="text-xs uppercase tracking-wider text-warm-300 font-semibold">WhatsApp Officiel</div>
-                      <div className="font-sans font-bold text-white text-lg mt-0.5">+213 550 59 37 07</div>
+                      <div className="text-[10px] sm:text-xs uppercase tracking-wider text-warm-300 font-semibold">WhatsApp</div>
+                      <div className="font-sans font-bold text-white text-xs sm:text-base md:text-lg mt-0.5">+213 550 59 37 07</div>
                     </div>
                   </div>
-                  <ArrowRight size={18} className="text-[#25D366] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={18} className="text-[#25D366] group-hover:translate-x-1 transition-transform hidden sm:block" />
                 </a>
 
                 {/* Official Phone Card */}
                 <a
                   href="tel:+213550198833"
-                  className="flex items-center justify-between p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#0A84FF]/50 transition-all duration-300 group"
+                  className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 sm:p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#0A84FF]/50 transition-all duration-300 group gap-2 sm:gap-0"
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-[#0A84FF]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#0A84FF]/20 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
                       {/* Official Phone Handset SVG Icon */}
-                      <svg className="w-7 h-7 text-[#0A84FF] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="w-5 h-5 sm:w-7 sm:h-7 text-[#0A84FF]" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
                       </svg>
                     </div>
                     <div>
-                      <div className="text-xs uppercase tracking-wider text-warm-300 font-semibold">Téléphone Direct</div>
-                      <div className="font-sans font-bold text-white text-lg mt-0.5">+213 550 19 88 33</div>
+                      <div className="text-[10px] sm:text-xs uppercase tracking-wider text-warm-300 font-semibold">Téléphone</div>
+                      <div className="font-sans font-bold text-white text-xs sm:text-base md:text-lg mt-0.5">+213 550 19 88 33</div>
                     </div>
                   </div>
-                  <ArrowRight size={18} className="text-[#0A84FF] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={18} className="text-[#0A84FF] group-hover:translate-x-1 transition-transform hidden sm:block" />
                 </a>
 
                 {/* Official Gmail Card */}
                 <a
                   href="mailto:Belaid.laforet@gmail.com"
-                  className="flex items-center justify-between p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#EA4335]/50 transition-all duration-300 group"
+                  className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 sm:p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-[#EA4335]/50 transition-all duration-300 group gap-2 sm:gap-0"
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-[#EA4335]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#EA4335]/20 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
                       {/* Official Gmail SVG Icon */}
-                      <svg className="w-7 h-7 text-[#EA4335] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="w-5 h-5 sm:w-7 sm:h-7 text-[#EA4335]" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
                       </svg>
                     </div>
                     <div>
-                      <div className="text-xs uppercase tracking-wider text-warm-300 font-semibold">Gmail Officiel</div>
-                      <div className="font-sans font-medium text-white text-base mt-0.5">Belaid.laforet@gmail.com</div>
+                      <div className="text-[10px] sm:text-xs uppercase tracking-wider text-warm-300 font-semibold">Gmail</div>
+                      <div className="font-sans font-medium text-white text-[11px] sm:text-base mt-0.5 break-all sm:break-normal">Belaid.laforet@gmail.com</div>
                     </div>
                   </div>
-                  <ArrowRight size={18} className="text-[#EA4335] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={18} className="text-[#EA4335] group-hover:translate-x-1 transition-transform hidden sm:block" />
                 </a>
 
                 {/* Official Address / Siege Card */}
-                <div className="flex items-center justify-between p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-[#D93025]/20 flex items-center justify-center">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 sm:p-5 rounded-2xl bg-white/5 backdrop-blur-2xl border border-white/10 shadow-lg gap-2 sm:gap-0">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#D93025]/20 flex items-center justify-center shrink-0">
                       {/* Official Location Pin SVG Icon */}
-                      <svg className="w-7 h-7 text-[#D93025] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="w-5 h-5 sm:w-7 sm:h-7 text-[#D93025]" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                       </svg>
                     </div>
                     <div>
-                      <div className="text-xs uppercase tracking-wider text-warm-300 font-semibold">Siège & Réception</div>
-                      <div className="font-sans font-medium text-white text-base mt-0.5">Boulevard 5, Alger</div>
+                      <div className="text-[10px] sm:text-xs uppercase tracking-wider text-warm-300 font-semibold">Siège & Réception</div>
+                      <div className="font-sans font-medium text-white text-xs sm:text-base mt-0.5">Boulevard 5, Alger</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Private Admin Dashboard Form */}
-            <div className="lg:col-span-7">
-              <div className="bg-white/5 backdrop-blur-2xl rounded-[2rem] p-8 md:p-10 border border-white/10 shadow-2xl text-white">
-                <h3 className="text-2xl font-sans font-extrabold tracking-tight text-white mb-2">
+            {/* Right Column: Private Admin Dashboard Form (Wider inputs & spacious textarea on mobile) */}
+            <div className="lg:col-span-7 w-full">
+              <div className="bg-white/5 backdrop-blur-2xl rounded-2xl sm:rounded-[2rem] p-4 sm:p-8 md:p-10 border border-white/10 shadow-2xl text-white w-full">
+                <h3 className="text-xl sm:text-2xl font-sans font-extrabold tracking-tight text-white mb-1.5 sm:mb-2">
                   Envoyer un Message Confidentiel
                 </h3>
-                <p className="text-warm-300 font-sans text-sm leading-relaxed mb-8">
+                <p className="text-warm-300 font-sans text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">
                   Votre message est transmis instantanément au tableau de bord de la direction générale.
                 </p>
 
@@ -610,55 +630,55 @@ function ContactUsSection() {
                     </Button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                      <div>
-                        <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-2">Nom & Prénom</label>
+                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 w-full">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full">
+                      <div className="w-full">
+                        <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-1.5 sm:mb-2">Nom & Prénom</label>
                         <Input
                           required
                           placeholder="M. Karim Benali"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          className="bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
+                          className="w-full bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
                         />
                       </div>
-                      <div>
-                        <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-2">Email Professionnel</label>
+                      <div className="w-full">
+                        <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-1.5 sm:mb-2">Email Professionnel</label>
                         <Input
                           required
                           type="email"
                           placeholder="karim@domaine.com"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
+                          className="w-full bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
                         />
                       </div>
                     </div>
 
-                    <div>
-                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-2">Téléphone / WhatsApp</label>
+                    <div className="w-full">
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-1.5 sm:mb-2">Téléphone / WhatsApp</label>
                       <Input
                         required
                         placeholder="+213 (0) 555..."
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
+                        className="w-full bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans"
                       />
                     </div>
 
-                    <div>
-                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-2">Votre Message Confidentiel</label>
+                    <div className="w-full">
+                      <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-warm-300 mb-1.5 sm:mb-2">Votre Message Confidentiel</label>
                       <Textarea
                         required
                         rows={4}
                         placeholder="Décrivez votre projet d'acquisition, de vente ou vos critères de recherche..."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans resize-none"
+                        className="w-full min-h-[140px] sm:min-h-[160px] bg-white/5 border-white/15 text-white placeholder:text-white/40 rounded-xl focus:border-gold-400 focus:bg-white/10 font-sans resize-none"
                       />
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 w-full">
                       <Button
                         type="submit"
                         disabled={loading}

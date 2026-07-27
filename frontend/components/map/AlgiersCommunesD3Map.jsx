@@ -85,7 +85,7 @@ export default function AlgiersCommunesD3Map({ selectedCommune, onSelectCommune,
     <div 
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full h-full min-h-[520px] flex items-center justify-center select-none overflow-hidden"
+      className="relative w-full h-auto md:h-full min-h-[260px] sm:min-h-[380px] md:min-h-[520px] flex items-center justify-center select-none overflow-hidden py-1 sm:py-4 md:py-0"
     >
       {/* Background radial glow */}
       <div className="absolute inset-0 bg-radial from-gold-500/10 via-transparent to-transparent opacity-60 pointer-events-none"></div>
@@ -94,7 +94,7 @@ export default function AlgiersCommunesD3Map({ selectedCommune, onSelectCommune,
       <svg
         viewBox={`0 0 ${width} ${height}`}
         suppressHydrationWarning={true}
-        className="w-full h-full max-h-[680px] overflow-visible drop-shadow-[0_15px_35px_rgba(0,0,0,0.65)]"
+        className="w-full h-auto md:h-full max-h-[340px] sm:max-h-[480px] md:max-h-[680px] overflow-visible drop-shadow-[0_15px_35px_rgba(0,0,0,0.65)]"
       >
         <defs>
           {/* Active gold glowing gradient */}

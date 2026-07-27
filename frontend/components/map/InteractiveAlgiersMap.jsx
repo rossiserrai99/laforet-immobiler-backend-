@@ -250,18 +250,18 @@ export function InteractiveAlgiersMap({ allProperties: propsFromParent = [] }) {
         </div>
 
         {/* 2. APPLE-LEVEL FLOATING GLASS CARD (30% Left / 70% Right) */}
-        <div className="relative rounded-[32px] md:rounded-[36px] bg-charcoal-900/70 backdrop-blur-3xl border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),_0_25px_80px_-15px_rgba(0,0,0,0.85)] p-6 md:p-10 lg:p-12 transition-all duration-500">
+        <div className="relative rounded-[32px] md:rounded-[36px] bg-charcoal-900/70 backdrop-blur-3xl border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),_0_25px_80px_-15px_rgba(0,0,0,0.85)] p-5 sm:p-8 md:p-10 lg:p-12 transition-all duration-500">
           
           {/* Subtle upper reflection highlight */}
           <div className="absolute top-0 left-10 right-10 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none"></div>
 
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-stretch">
             
-            {/* LEFT SIDE: Information & Analytics Panel (~32% Width) */}
-            <div className="w-full lg:w-[32%] flex flex-col justify-between space-y-6">
+            {/* LEFT SIDE WRAPPER: On mobile (display: contents), children participate directly in flex ordering! On desktop, forms the 32% column */}
+            <div className="contents lg:flex lg:flex-col lg:w-[32%] lg:justify-between space-y-6">
               
-              {/* Header Box: Active Commune or National Index */}
-              <div className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group hover:border-gold-400/40 transition-all duration-300 shadow-lg">
+              {/* 1. Header Box: Active Commune or National Index (ORDER 1 on mobile) */}
+              <div className="order-1 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl p-5 sm:p-6 relative overflow-hidden group hover:border-gold-400/40 transition-all duration-300 shadow-lg">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gold-400/5 rounded-full blur-2xl group-hover:bg-gold-400/10 transition-colors"></div>
                 
                 <div className="flex items-center justify-between mb-3">
@@ -308,96 +308,98 @@ export function InteractiveAlgiersMap({ allProperties: propsFromParent = [] }) {
                 </p>
               </div>
 
-              {/* MINI GLASS STAT CARDS (4-Grid / Stack) */}
-              <div className="grid grid-cols-2 gap-3 md:gap-4">
-                
-                {/* Stat 1: Appartements */}
-                <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Building2 size={16} />
+              {/* 3. MINI GLASS STAT CARDS & CTA (ORDER 3 on mobile - under the map!) */}
+              <div className="order-3 space-y-6">
+                <div className="grid grid-cols-2 gap-3 md:gap-4">
+                  
+                  {/* Stat 1: Appartements */}
+                  <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Building2 size={16} />
+                      </div>
+                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-300">
+                        Apt
+                      </span>
                     </div>
-                    <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-300">
-                      Apt
-                    </span>
+                    <div className="font-sans text-2xl font-bold text-white tracking-tight">
+                      <CountUpNumber end={displayAppartements} duration={1400} />
+                    </div>
+                    <p className="text-[11px] text-white/60 mt-0.5">Appartements de prestige</p>
                   </div>
-                  <div className="font-sans text-2xl font-bold text-white tracking-tight">
-                    <CountUpNumber end={displayAppartements} duration={1400} />
+
+                  {/* Stat 2: Villas */}
+                  <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Home size={16} />
+                      </div>
+                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-gold-500/10 text-gold-300">
+                        Villa
+                      </span>
+                    </div>
+                    <div className="font-sans text-2xl font-bold text-white tracking-tight">
+                      <CountUpNumber end={displayVillas} duration={1400} />
+                    </div>
+                    <p className="text-[11px] text-white/60 mt-0.5">Villas & Demeures</p>
                   </div>
-                  <p className="text-[11px] text-white/60 mt-0.5">Appartements de prestige</p>
+
+                  {/* Stat 3: Communes Couvertes / Surface */}
+                  <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Award size={16} />
+                      </div>
+                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300">
+                        {selectedCommune ? "Surface" : "Secteurs"}
+                      </span>
+                    </div>
+                    <div className="font-sans text-2xl font-bold text-white tracking-tight">
+                      {selectedCommune ? selectedCommune.avgSurface : <CountUpNumber end={totalCommunes} duration={1000} />}
+                    </div>
+                    <p className="text-[11px] text-white/60 mt-0.5">
+                      {selectedCommune ? "Surface moyenne" : "Communes couvertes"}
+                    </p>
+                  </div>
+
+                  {/* Stat 4: Prix Moyen */}
+                  <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <TrendingUp size={16} />
+                      </div>
+                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300">
+                        Prix
+                      </span>
+                    </div>
+                    <div className="font-sans text-2xl font-bold text-gold-300 tracking-tight">
+                      {displayPrice}
+                    </div>
+                    <p className="text-[11px] text-white/60 mt-0.5">Valorisation moyenne</p>
+                  </div>
+
                 </div>
 
-                {/* Stat 2: Villas */}
-                <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Home size={16} />
-                    </div>
-                    <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-gold-500/10 text-gold-300">
-                      Villa
+                {/* Action CTA for Selected Commune */}
+                <div className="pt-1">
+                  <Link
+                    href={selectedCommune ? `/properties?commune=${encodeURIComponent(selectedCommune.name)}` : "/properties"}
+                    className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 hover:from-gold-400 hover:to-gold-500 text-charcoal-950 font-sans font-bold text-sm shadow-[0_10px_25px_rgba(251,191,36,0.3)] hover:shadow-[0_15px_30px_rgba(251,191,36,0.45)] transition-all duration-300 transform hover:-translate-y-0.5"
+                  >
+                    <span>
+                      {selectedCommune 
+                        ? `Explorer les biens à ${selectedCommune.name} (${selectedCommune.totalCount || 0})` 
+                        : `Voir tout le catalogue Alger (${totalProperties})`}
                     </span>
-                  </div>
-                  <div className="font-sans text-2xl font-bold text-white tracking-tight">
-                    <CountUpNumber end={displayVillas} duration={1400} />
-                  </div>
-                  <p className="text-[11px] text-white/60 mt-0.5">Villas & Demeures</p>
+                    <ArrowUpRight size={16} className="stroke-[2.5]" />
+                  </Link>
                 </div>
-
-                {/* Stat 3: Communes Couvertes / Surface */}
-                <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Award size={16} />
-                    </div>
-                    <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300">
-                      {selectedCommune ? "Surface" : "Secteurs"}
-                    </span>
-                  </div>
-                  <div className="font-sans text-2xl font-bold text-white tracking-tight">
-                    {selectedCommune ? selectedCommune.avgSurface : <CountUpNumber end={totalCommunes} duration={1000} />}
-                  </div>
-                  <p className="text-[11px] text-white/60 mt-0.5">
-                    {selectedCommune ? "Surface moyenne" : "Communes couvertes"}
-                  </p>
-                </div>
-
-                {/* Stat 4: Prix Moyen */}
-                <div className="bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 hover:border-white/20 rounded-2xl p-4 transition-all duration-300 shadow-md group">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <TrendingUp size={16} />
-                    </div>
-                    <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300">
-                      Prix
-                    </span>
-                  </div>
-                  <div className="font-sans text-2xl font-bold text-gold-300 tracking-tight">
-                    {displayPrice}
-                  </div>
-                  <p className="text-[11px] text-white/60 mt-0.5">Valorisation moyenne</p>
-                </div>
-
-              </div>
-
-              {/* Action CTA for Selected Commune */}
-              <div className="pt-2">
-                <Link
-                  href={selectedCommune ? `/properties?commune=${encodeURIComponent(selectedCommune.name)}` : "/properties"}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 hover:from-gold-400 hover:to-gold-500 text-charcoal-950 font-sans font-bold text-sm shadow-[0_10px_25px_rgba(251,191,36,0.3)] hover:shadow-[0_15px_30px_rgba(251,191,36,0.45)] transition-all duration-300 transform hover:-translate-y-0.5"
-                >
-                  <span>
-                    {selectedCommune 
-                      ? `Explorer les biens à ${selectedCommune.name} (${selectedCommune.totalCount || 0})` 
-                      : `Voir tout le catalogue Alger (${totalProperties})`}
-                  </span>
-                  <ArrowUpRight size={16} className="stroke-[2.5]" />
-                </Link>
               </div>
 
             </div>
 
-            {/* RIGHT SIDE: Interactive SVG Map Area (~68% Width) */}
-            <div className="w-full lg:w-[68%] flex flex-col justify-center">
+            {/* RIGHT SIDE: Interactive SVG Map Area (ORDER 2 on mobile - right under Commune Sélectionnée card!) */}
+            <div className="order-2 lg:order-2 w-full lg:w-[68%] flex flex-col justify-center my-2 lg:my-0">
               <AlgiersCommunesD3Map 
                 selectedCommune={selectedCommune} 
                 onSelectCommune={(commune) => setSelectedCommuneName(commune ? commune.name : null)}
