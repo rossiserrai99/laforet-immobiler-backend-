@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://laforet-immo.dz';
+  const baseUrl = process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://agenceimmobiliere-laforet.online';
 
   return {
     rules: {
