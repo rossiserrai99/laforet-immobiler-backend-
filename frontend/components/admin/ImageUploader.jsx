@@ -84,18 +84,18 @@ export function ImageUploader({ existingImages = [], onFilesSelected, onFilesDel
         onDrop={handleDrop}
         className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all ${
           isDragging 
-            ? 'border-gold-400 bg-gold-400/10 shadow-lg' 
-            : 'border-white/20 bg-charcoal-950/50 hover:bg-charcoal-950/80 hover:border-gold-400/50'
+            ? 'border-[#133E26] bg-[#133E26]/10 shadow-md' 
+            : 'border-[#A8BAB1] bg-white hover:bg-[#EBF0EE] hover:border-[#133E26]/60'
         }`}
       >
-        <UploadCloud className={`mx-auto h-12 w-12 mb-4 ${isDragging ? 'text-gold-400' : 'text-warm-400'}`} />
-        <h3 className="text-sm font-medium text-white mb-1">
-          Glissez-déposez vos images ici
+        <UploadCloud className={`mx-auto h-12 w-12 mb-4 ${isDragging ? 'text-[#133E26]' : 'text-[#4A6455]'}`} />
+        <h3 className="text-sm font-bold text-[#0B150F] mb-1">
+          Glissez-déposez vos images ici (ou appuyez pour parcourir)
         </h3>
-        <p className="text-xs text-warm-300 mb-4">
+        <p className="text-xs text-[#52665A] mb-4 font-medium">
           PNG, JPG, WEBP jusqu&apos;à 5MB (Max 10 images)
         </p>
-        <label className="cursor-pointer inline-flex items-center justify-center px-4 py-2 border border-white/20 rounded-xl shadow-sm text-sm font-medium text-white bg-white/10 hover:bg-white/20 transition-all">
+        <label className="cursor-pointer inline-flex items-center justify-center px-6 py-3 border border-[#C5D2CB] rounded-xl shadow-sm text-sm font-bold text-[#133E26] bg-[#E2EAE5] hover:bg-[#D3DDD7] transition-all min-w-[180px] min-h-[44px]">
           <span>Parcourir les fichiers</span>
           <input 
             type="file" 
@@ -109,23 +109,25 @@ export function ImageUploader({ existingImages = [], onFilesSelected, onFilesDel
 
       {/* Previews */}
       {(existingImages.length > 0 || previewUrls.length > 0) && (
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 mt-4">
           {/* Existing Images (from Cloudinary) */}
           {localExistingImages.map((img, idx) => (
-            <div key={`existing-${idx}`} className="relative aspect-square rounded-lg overflow-hidden border border-warm-200 group">
+            <div key={`existing-${idx}`} className="relative aspect-square rounded-xl overflow-hidden border border-[#C5D2CB] shadow-sm group">
               <Image 
                 src={img.url} 
-                alt="Existing property image" 
+                alt={`Existing ${idx}`} 
                 fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white text-xs">Déjà en ligne</span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity" />
+              <span className="absolute bottom-1.5 left-2 text-[10px] text-white font-mono bg-[#133E26]/90 px-2 py-0.5 rounded font-bold">
+                EN LIGNE
+              </span>
               <button
                 type="button"
                 onClick={() => removeExistingImage(img.publicId, idx)}
-                className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md"
+                className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 sm:p-1.5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md min-w-[32px] min-h-[32px] flex items-center justify-center"
                 title="Supprimer"
               >
                 <X className="h-4 w-4" />
@@ -135,17 +137,18 @@ export function ImageUploader({ existingImages = [], onFilesSelected, onFilesDel
 
           {/* New Upload Previews */}
           {previewUrls.map((url, idx) => (
-            <div key={`new-${idx}`} className="relative aspect-square rounded-lg overflow-hidden border border-gold-300 shadow-sm group">
+            <div key={`new-${idx}`} className="relative aspect-square rounded-xl overflow-hidden border-2 border-[#133E26] shadow-sm group">
               <Image 
                 src={url} 
                 alt={`New preview ${idx}`} 
                 fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
                 className="object-cover"
               />
               <button
                 type="button"
                 onClick={() => removeNewImage(idx)}
-                className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md"
+                className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 sm:p-1.5 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md min-w-[32px] min-h-[32px] flex items-center justify-center"
               >
                 <X className="h-4 w-4" />
               </button>

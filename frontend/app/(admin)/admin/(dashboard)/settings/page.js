@@ -21,7 +21,10 @@ export default function SettingsPage() {
 
   useEffect(() => {
     if (user?.email) {
-      setFormData(prev => ({ ...prev, newEmail: user.email }));
+      const timer = setTimeout(() => {
+        setFormData(prev => ({ ...prev, newEmail: user.email }));
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [user]);
 
@@ -80,19 +83,19 @@ export default function SettingsPage() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
         <div>
-          <h1 className="text-3xl font-sans font-bold text-white mb-2 tracking-tight">Paramètres du Compte</h1>
-          <p className="text-warm-400 font-sans">Gérez vos identifiants et sécurisez votre accès administrateur.</p>
+          <h1 className="text-3xl font-sans font-bold text-[#0B150F] mb-2 tracking-tight">Paramètres du Compte</h1>
+          <p className="text-[#3C5245] font-sans">Gérez vos identifiants et sécurisez votre accès administrateur.</p>
         </div>
       </div>
 
-      <div className="bg-charcoal-900/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 shadow-2xl">
-        <div className="flex items-center gap-3 mb-6 pb-6 border-b border-white/5">
-          <div className="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center border border-gold-500/30">
-            <ShieldAlert className="w-6 h-6 text-gold-400" />
+      <div className="bg-[#132A1E]/85 backdrop-blur-xl border border-[#2D5A43]/50 rounded-3xl p-6 md:p-8 shadow-[0_20px_50px_rgba(19,42,30,0.15)] text-white">
+        <div className="flex items-center gap-4 mb-6 pb-6 border-b border-white/10">
+          <div className="w-12 h-12 rounded-2xl bg-[#2D5A43]/30 flex items-center justify-center border border-[#2D5A43]/50">
+            <ShieldAlert className="w-6 h-6 text-[#E8C97A]" />
           </div>
           <div>
             <h2 className="text-xl font-bold text-white font-sans">Identifiants de Connexion</h2>
-            <p className="text-sm text-warm-400 font-sans mt-1">Mettez à jour votre adresse email et/ou votre mot de passe.</p>
+            <p className="text-sm text-[#8EA89A] font-sans mt-1">Mettez à jour votre adresse email et/ou votre mot de passe.</p>
           </div>
         </div>
 
@@ -125,7 +128,7 @@ export default function SettingsPage() {
                     required
                     value={formData.newEmail}
                     onChange={handleChange}
-                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans"
+                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans text-base sm:text-sm"
                     placeholder="admin@laforet.dz"
                   />
                 </div>
@@ -146,7 +149,7 @@ export default function SettingsPage() {
                     required
                     value={formData.currentPassword}
                     onChange={handleChange}
-                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-12 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans"
+                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-12 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans text-base sm:text-sm"
                     placeholder="Obligatoire pour sauvegarder"
                   />
                   <button 
@@ -174,7 +177,7 @@ export default function SettingsPage() {
                     name="newPassword"
                     value={formData.newPassword}
                     onChange={handleChange}
-                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-12 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans"
+                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-12 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans text-base sm:text-sm"
                     placeholder="Optionnel"
                   />
                   <button 
@@ -201,7 +204,7 @@ export default function SettingsPage() {
                     name="confirmPassword"
                     value={formData.confirmPassword}
                     onChange={handleChange}
-                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans"
+                    className="w-full bg-charcoal-950/50 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/50 transition-all font-sans text-base sm:text-sm"
                     placeholder="Répétez le nouveau mot de passe"
                   />
                 </div>
@@ -213,7 +216,7 @@ export default function SettingsPage() {
             <button
               type="submit"
               disabled={isLoading || !formData.currentPassword}
-              className="px-6 py-3 bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-300 hover:to-gold-500 text-charcoal-950 font-bold rounded-xl shadow-[0_0_20px_rgba(201,162,39,0.3)] hover:shadow-[0_0_30px_rgba(201,162,39,0.5)] transition-all duration-300 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto px-6 py-3.5 sm:py-3 bg-[#133E26] hover:bg-[#1B4F32] text-white font-bold rounded-xl shadow-sm border border-[#2D5A43]/60 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <span className="w-5 h-5 border-2 border-charcoal-950 border-t-transparent rounded-full animate-spin"></span>

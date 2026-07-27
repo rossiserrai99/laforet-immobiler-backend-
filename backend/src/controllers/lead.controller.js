@@ -9,7 +9,7 @@ exports.createLead = asyncHandler(async (req, res, next) => {
 });
 
 exports.getAllLeads = asyncHandler(async (req, res, next) => {
-  const leads = await Lead.find().sort('-createdAt').populate('propertyId', 'title reference images slug');
+  const leads = await Lead.find().sort('-createdAt').populate('propertyId');
   sendSuccess(res, 200, {
     results: leads.length,
     leads

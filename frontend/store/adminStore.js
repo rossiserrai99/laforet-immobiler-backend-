@@ -10,6 +10,7 @@ export const useAdminStore = create((set) => ({
     if (typeof window !== 'undefined') {
       localStorage.removeItem('laforet_token');
       document.cookie = 'laforet_token=; path=/; max-age=0; SameSite=Lax';
+      document.cookie = 'laforet_token=; path=/; max-age=0; SameSite=None; Secure';
     }
     set({ admin: null, isAuthenticated: false, isLoading: false });
   },

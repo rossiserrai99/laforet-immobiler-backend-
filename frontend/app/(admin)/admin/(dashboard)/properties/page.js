@@ -6,6 +6,33 @@ import Image from 'next/image';
 import { Plus, Edit, Trash2, ExternalLink, Building2, Search, Filter } from 'lucide-react';
 import propertyService from '@/services/property.service';
 
+const DEFAULT_PROPERTY_IMAGE = "https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg";
+const getPropertyImage = (property) => {
+  if (!property) return DEFAULT_PROPERTY_IMAGE;
+  
+  const isValidUrl = (url) => typeof url === 'string' && url.trim().length > 5 && (url.startsWith('http') || url.startsWith('/'));
+
+  if (property.media?.coverImage?.url && isValidUrl(property.media.coverImage.url)) {
+    return property.media.coverImage.url;
+  }
+  if (property.media?.images && Array.isArray(property.media.images) && property.media.images.length > 0) {
+    const firstImg = property.media.images[0];
+    if (isValidUrl(firstImg)) return firstImg;
+    if (firstImg?.url && isValidUrl(firstImg.url)) return firstImg.url;
+  }
+  if (property.images && Array.isArray(property.images) && property.images.length > 0) {
+    const firstImg = property.images[0];
+    if (isValidUrl(firstImg)) return firstImg;
+    if (firstImg?.url && isValidUrl(firstImg.url)) return firstImg.url;
+  }
+  if (property.coverImage && isValidUrl(property.coverImage)) return property.coverImage;
+  if (property.coverImage?.url && isValidUrl(property.coverImage.url)) return property.coverImage.url;
+  if (property.image && isValidUrl(property.image)) return property.image;
+  if (property.image?.url && isValidUrl(property.image.url)) return property.image.url;
+
+  return DEFAULT_PROPERTY_IMAGE;
+};
+
 export default function PropertiesPage() {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +50,10 @@ export default function PropertiesPage() {
   };
 
   useEffect(() => {
-    fetchProperties();
+    const timer = setTimeout(() => {
+      fetchProperties();
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const getStatusBadge = (status) => {
@@ -63,36 +93,36 @@ export default function PropertiesPage() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E2E8F0] pb-6">
         <div>
-          <h1 className="text-3xl font-sans font-extrabold text-white tracking-tight">
+          <h1 className="text-3xl font-sans font-extrabold text-[#0B150F] tracking-tight">
             Catalogue des Biens
           </h1>
-          <p className="text-warm-300 text-sm mt-1 font-sans">
+          <p className="text-[#3C5245] text-sm mt-1 font-sans">
             Gérez en temps réel vos propriétés, prix et disponibilités.
           </p>
         </div>
         <Link 
           href="/admin/properties/new" 
-          className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-b from-[#E3CD86] to-[#C9A227] hover:from-[#F3E6BF] hover:to-[#D4AF37] text-[#090B10] font-bold text-sm shadow-[0_4px_20px_rgba(201,162,39,0.3)] hover:shadow-[0_4px_25px_rgba(201,162,39,0.5)] border border-[#F3E6BF]/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#133E26] hover:bg-[#1B4F32] text-white font-bold text-sm shadow-sm border border-[#2D5A43]/60 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
         >
-          <Plus className="w-4 h-4" />
+          <Plus className="w-4 h-4 text-[#E8C97A]" />
           <span>Ajouter un Bien</span>
         </Link>
       </div>
 
-      {/* Luxury Glassmorphism Table Card */}
-      <div className="bg-[#1C2234]/60 backdrop-blur-xl rounded-2xl border border-white/15 shadow-[0_10px_30px_rgba(0,0,0,0.3)] overflow-hidden">
-        <div className="p-4 border-b border-white/10 flex items-center justify-between bg-charcoal-950/40">
-          <div className="flex items-center gap-2 text-xs font-sans uppercase tracking-wider font-semibold text-warm-300">
-            <Building2 className="w-4 h-4 text-gold-400" />
+      {/* Luxury Solid Forest Green Table Card */}
+      <div className="bg-[#132A1E]/85 backdrop-blur-xl rounded-3xl border border-[#2D5A43]/50 shadow-[0_20px_50px_rgba(19,42,30,0.15)] overflow-hidden text-white">
+        <div className="p-5 border-b border-white/10 flex items-center justify-between bg-[#193B28]/90">
+          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider font-bold text-[#E8C97A]">
+            <Building2 className="w-4 h-4 text-[#E8C97A]" />
             <span>Total : {properties.length} propriétés</span>
           </div>
         </div>
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm font-sans">
-            <thead className="bg-charcoal-950/70 text-warm-300 font-sans text-xs uppercase tracking-wider font-semibold border-b border-white/10">
+            <thead className="bg-[#193B28]/90 text-[#8EA89A] font-mono text-xs uppercase tracking-wider font-semibold border-b border-white/10">
               <tr>
                 <th className="px-6 py-4 font-semibold">Bien & Référence</th>
                 <th className="px-6 py-4 font-semibold">Catégorie</th>
@@ -115,26 +145,22 @@ export default function PropertiesPage() {
               ) : properties.length === 0 ? (
                 <tr>
                   <td colSpan="6" className="px-6 py-12 text-center text-warm-400 font-sans">
-                    Aucun bien immobilier enregistré. Cliquez sur &quot;Ajouter un Bien&quot; pour commencer.
+                    Aucune propriété dans le catalogue.
                   </td>
                 </tr>
               ) : (
                 properties.map((property) => (
-                  <tr key={property._id} className="hover:bg-white/5 transition-colors group">
+                  <tr key={property._id} className="hover:bg-[#1C412C]/80 transition-colors group">
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-4">
                         <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-charcoal-800 shrink-0 border border-white/10">
-                          {property.images && property.images[0] ? (
-                            <Image 
-                              src={property.images[0]} 
-                              alt={property.title}
-                              fill
-                              sizes="56px"
-                              className="object-cover group-hover:scale-105 transition-transform duration-300"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center text-warm-500 text-xs font-sans">No img</div>
-                          )}
+                          <Image 
+                            src={getPropertyImage(property)} 
+                            alt={property.title || 'Bien immobilier'}
+                            fill
+                            sizes="56px"
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
                         </div>
                         <div className="min-w-0">
                           <span className="text-[11px] font-sans uppercase tracking-wider text-gold-400 font-semibold block mb-0.5">
@@ -168,7 +194,7 @@ export default function PropertiesPage() {
                             href={`/properties/${property.slug}`}
                             target="_blank"
                             title="Voir en ligne"
-                            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-warm-300 hover:text-gold-400 border border-transparent hover:border-white/10 transition-all"
+                            className="p-2.5 sm:p-2 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-warm-300 hover:text-gold-400 border border-transparent hover:border-white/10 transition-all"
                           >
                             <ExternalLink className="w-4 h-4" />
                           </Link>
@@ -176,14 +202,14 @@ export default function PropertiesPage() {
                         <Link 
                           href={`/admin/properties/${property._id}/edit`}
                           title="Modifier"
-                          className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-warm-300 hover:text-white border border-transparent hover:border-white/10 transition-all"
+                          className="p-2.5 sm:p-2 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-warm-300 hover:text-white border border-transparent hover:border-white/10 transition-all"
                         >
                           <Edit className="w-4 h-4" />
                         </Link>
                         <button 
                           onClick={() => handleDelete(property._id)}
                           title="Supprimer"
-                          className="p-2 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 hover:text-red-300 border border-transparent hover:border-red-500/30 transition-all"
+                          className="p-2.5 sm:p-2 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 hover:text-red-300 border border-transparent hover:border-red-500/30 transition-all"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>

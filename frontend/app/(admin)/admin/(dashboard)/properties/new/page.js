@@ -8,9 +8,13 @@ export const metadata = {
 export default function NewPropertyPage() {
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="mb-8 border-b border-white/10 pb-6">
-        <h1 className="text-3xl font-serif font-bold text-white mb-2">Ajouter un nouveau bien</h1>
-        <p className="text-warm-300 text-sm">Complétez le formulaire ci-dessous pour publier une nouvelle annonce immobilière de prestige.</p>
+      <div className="mb-8 border-b border-[#D8E2DC] pb-6">
+        <h1 className="text-3xl font-sans font-extrabold text-[#0B150F] tracking-tight mb-1">
+          Ajouter un nouveau bien
+        </h1>
+        <p className="text-[#3C5245] text-sm font-sans">
+          Complétez le formulaire ci-dessous pour publier une nouvelle annonce immobilière dans votre catalogue.
+        </p>
       </div>
 
       <PropertyForm />

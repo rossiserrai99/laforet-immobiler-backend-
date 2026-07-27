@@ -28,8 +28,13 @@ export const useAdminAuth = () => {
   const logout = useCallback(async () => {
     try {
       await authService.logout();
+    } catch (e) {
+      // ignore errors during logout
     } finally {
       clearAdmin();
+      if (typeof window !== 'undefined') {
+        window.location.href = '/admin/login';
+      }
     }
   }, [clearAdmin]);
 

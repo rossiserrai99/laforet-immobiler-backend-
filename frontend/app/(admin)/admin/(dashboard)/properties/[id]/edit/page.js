@@ -32,21 +32,32 @@ export default function EditPropertyPage() {
   if (isLoading) {
     return (
       <div className="flex flex-col items-center justify-center py-24 gap-4">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-gold-400"></div>
-        <div className="text-center text-warm-400 text-sm font-mono uppercase tracking-widest">Chargement du bien...</div>
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#133E26]"></div>
+        <div className="text-center text-[#3C5245] text-sm font-mono uppercase tracking-widest">Chargement du bien...</div>
       </div>
     );
   }
 
   if (!property) {
-    return <div className="text-center p-12 text-red-400">Bien introuvable dans la base de données.</div>;
+    return <div className="text-center p-12 text-red-500 font-medium">Bien introuvable dans la base de données.</div>;
   }
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="mb-8 border-b border-white/10 pb-6">
-        <h1 className="text-3xl font-serif font-bold text-white mb-2">Modifier la propriété : {property.title}</h1>
-        <p className="text-warm-300 text-xs font-mono uppercase tracking-widest text-gold-400">Référence: {property.reference}</p>
+      <div className="mb-8 border-b border-[#D8E2DC] pb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-sans font-extrabold text-[#0B150F] tracking-tight mb-1.5">
+            Modifier le bien : {property.title}
+          </h1>
+          <div className="flex items-center gap-2">
+            <span className="px-3 py-1 rounded-full bg-[#133E26]/10 text-[#133E26] text-xs font-mono font-bold uppercase border border-[#133E26]/20">
+              Réf : {property.reference}
+            </span>
+            <span className="text-xs text-[#52665A] font-sans font-medium">
+              • Modification en cours
+            </span>
+          </div>
+        </div>
       </div>
 
       <PropertyForm initialData={property} />

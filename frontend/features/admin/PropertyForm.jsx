@@ -151,30 +151,30 @@ export function PropertyForm({ initialData = null }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       {error && (
-        <div className="bg-red-500/10 text-red-300 p-4 rounded-xl border border-red-500/20 text-sm">
+        <div className="bg-red-500/10 text-red-700 p-4 rounded-xl border border-red-500/30 text-sm font-medium">
           {error}
         </div>
       )}
 
       {/* Grid for General Info */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-charcoal-900/80 backdrop-blur-2xl p-6 rounded-2xl border border-white/10 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
-        <div className="col-span-full mb-2">
-          <h2 className="text-lg font-serif font-medium text-white border-b border-white/10 pb-2">Informations Générales</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#F3F6F4] border border-[#C5D2CB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-3xl p-6 md:p-8">
+        <div className="col-span-full mb-1">
+          <h2 className="text-xl font-sans font-bold text-[#0B150F] border-b border-[#D8E2DC] pb-3">Informations Générales</h2>
         </div>
         
         <div className="col-span-full">
-          <label className="block text-sm font-medium text-warm-300 mb-1">Titre de l&apos;annonce *</label>
-          <Input name="title" value={formData.title} onChange={handleInputChange} required className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Titre de l&apos;annonce *</label>
+          <Input name="title" value={formData.title} onChange={handleInputChange} required className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Référence interne *</label>
-          <Input name="reference" value={formData.reference} onChange={handleInputChange} required className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Référence interne *</label>
+          <Input name="reference" value={formData.reference} onChange={handleInputChange} required className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Statut *</label>
-          <select name="status" value={formData.status} onChange={handleInputChange} className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium">
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Statut *</label>
+          <select name="status" value={formData.status} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm">
             <option value="Disponible">Disponible</option>
             <option value="Vendu">Vendu</option>
             <option value="Loué">Loué</option>
@@ -184,16 +184,16 @@ export function PropertyForm({ initialData = null }) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Type de transaction *</label>
-          <select name="type" value={formData.type} onChange={handleInputChange} className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium">
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Type de transaction *</label>
+          <select name="type" value={formData.type} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm">
             <option value="Vente">Vente</option>
             <option value="Location">Location</option>
           </select>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Catégorie *</label>
-          <select name="category" value={formData.category} onChange={handleInputChange} className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium">
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Catégorie *</label>
+          <select name="category" value={formData.category} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm">
             <option value="Appartement">Appartement</option>
             <option value="Studio">Studio</option>
             <option value="Duplex">Duplex</option>
@@ -207,8 +207,8 @@ export function PropertyForm({ initialData = null }) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Affichage Accueil</label>
-          <select name="homePageSection" value={formData.homePageSection} onChange={handleInputChange} className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium">
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Affichage Accueil</label>
+          <select name="homePageSection" value={formData.homePageSection} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm">
             <option value="None">Ne pas afficher sur l&apos;accueil</option>
             <option value="Exception">Section: Propriétés d&apos;Exception</option>
             <option value="Apartment">Section: Appartements d&apos;Exception</option>
@@ -217,58 +217,58 @@ export function PropertyForm({ initialData = null }) {
       </div>
 
       {/* Grid for Details & Pricing */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-charcoal-900/80 backdrop-blur-2xl p-6 rounded-2xl border border-white/10 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
-        <div className="col-span-full mb-2">
-          <h2 className="text-lg font-serif font-medium text-white border-b border-white/10 pb-2">Détails & Prix</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#F3F6F4] border border-[#C5D2CB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-3xl p-6 md:p-8">
+        <div className="col-span-full mb-1">
+          <h2 className="text-xl font-sans font-bold text-[#0B150F] border-b border-[#D8E2DC] pb-3">Détails & Prix</h2>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Prix (DZD) *</label>
-          <Input type="number" name="price" value={formData.price} onChange={handleInputChange} required className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Prix (DZD) *</label>
+          <Input type="number" name="price" value={formData.price} onChange={handleInputChange} required className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div className="flex items-center md:pt-6">
-          <label className="flex items-center space-x-2 cursor-pointer">
-            <input type="checkbox" name="priceHidden" checked={formData.priceHidden} onChange={handleInputChange} className="rounded text-gold-400 bg-charcoal-950 border-white/20 focus:ring-gold-400 h-4 w-4" />
-            <span className="text-sm font-medium text-warm-300">Prix &quot;Sur demande&quot;</span>
+          <label className="flex items-center space-x-2.5 cursor-pointer">
+            <input type="checkbox" name="priceHidden" checked={formData.priceHidden} onChange={handleInputChange} className="rounded text-[#133E26] bg-white border-[#B8C9C0] focus:ring-[#133E26] h-4 w-4" />
+            <span className="text-sm font-medium text-[#1E3025]">Prix &quot;Sur demande&quot;</span>
           </label>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Surface (m²) *</label>
-          <Input type="number" name="area" value={formData.area} onChange={handleInputChange} required className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Surface (m²) *</label>
+          <Input type="number" name="area" value={formData.area} onChange={handleInputChange} required className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Pièces</label>
-          <Input type="number" name="rooms" value={formData.rooms} onChange={handleInputChange} className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Pièces</label>
+          <Input type="number" name="rooms" value={formData.rooms} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Chambres</label>
-          <Input type="number" name="bedrooms" value={formData.bedrooms} onChange={handleInputChange} className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Chambres</label>
+          <Input type="number" name="bedrooms" value={formData.bedrooms} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Salles de bain</label>
-          <Input type="number" name="bathrooms" value={formData.bathrooms} onChange={handleInputChange} className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Salles de bain</label>
+          <Input type="number" name="bathrooms" value={formData.bathrooms} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
       </div>
 
       {/* Location */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-charcoal-900/80 backdrop-blur-2xl p-6 rounded-2xl border border-white/10 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
-        <div className="col-span-full mb-2">
-          <h2 className="text-lg font-serif font-medium text-white border-b border-white/10 pb-2">Localisation</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#F3F6F4] border border-[#C5D2CB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-3xl p-6 md:p-8">
+        <div className="col-span-full mb-1">
+          <h2 className="text-xl font-sans font-bold text-[#0B150F] border-b border-[#D8E2DC] pb-3">Localisation</h2>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Wilaya *</label>
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Wilaya *</label>
           <select
             name="location.wilaya"
             value={formData.location.wilaya}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium"
+            className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm"
           >
             <option value="">— Sélectionner —</option>
             <option value="Alger">Alger (Wilaya 16)</option>
@@ -276,7 +276,7 @@ export function PropertyForm({ initialData = null }) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-warm-300 mb-1">Commune *</label>
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Commune *</label>
           <select
             name="location.commune"
             value={formData.location.commune}
@@ -287,7 +287,7 @@ export function PropertyForm({ initialData = null }) {
               }
             }}
             required
-            className="w-full px-4 py-2.5 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none text-white font-medium"
+            className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm"
           >
             <option value="">— Sélectionner une commune —</option>
             {ALGIERS_COMMUNES.map(c => (
@@ -297,45 +297,46 @@ export function PropertyForm({ initialData = null }) {
         </div>
 
         <div className="col-span-full">
-          <label className="block text-sm font-medium text-warm-300 mb-1">Adresse complète</label>
-          <Input name="location.address" value={formData.location.address} onChange={handleInputChange} className="w-full bg-charcoal-950 border-white/15 text-white focus:ring-gold-400" />
+          <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Adresse complète</label>
+          <Input name="location.address" value={formData.location.address} onChange={handleInputChange} className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm" />
         </div>
       </div>
 
       {/* Description & Features */}
-      <div className="bg-charcoal-900/80 backdrop-blur-2xl p-6 rounded-2xl border border-white/10 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
-        <h2 className="text-lg font-serif font-medium text-white border-b border-white/10 pb-2 mb-4">Description</h2>
+      <div className="bg-[#F3F6F4] border border-[#C5D2CB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-3xl p-6 md:p-8">
+        <h2 className="text-xl font-sans font-bold text-[#0B150F] border-b border-[#D8E2DC] pb-3 mb-5">Description</h2>
         
-        <div className="space-y-4">
+        <div className="space-y-5">
           <div>
-            <label className="block text-sm font-medium text-warm-300 mb-1">Description détaillée *</label>
+            <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Description détaillée *</label>
             <textarea 
               name="description" 
               value={formData.description} 
               onChange={handleInputChange} 
               required 
               rows={6}
-              className="w-full px-4 py-3 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none resize-y text-white"
+              placeholder="Décrivez les atouts, l'agencement et l'environnement du bien..."
+              className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm resize-y"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-warm-300 mb-1">Caractéristiques (séparées par des virgules)</label>
+            <label className="block text-xs font-mono uppercase tracking-wider font-bold text-[#133E26] mb-1.5">Caractéristiques (séparées par des virgules)</label>
             <textarea 
               name="features" 
               value={formData.features} 
               onChange={handleInputChange} 
               rows={3}
               placeholder="Ex: Piscine, Garage, Vue sur mer, Jardin..."
-              className="w-full px-4 py-3 bg-charcoal-950 border border-white/15 rounded-xl focus:ring-2 focus:ring-gold-400/50 outline-none resize-y text-white"
+              className="w-full px-4 py-3 bg-white border border-[#B8C9C0] rounded-xl text-[#0B150F] placeholder-[#7E9689] focus:border-[#133E26] focus:ring-2 focus:ring-[#133E26]/20 outline-none transition-all font-medium text-sm shadow-sm resize-y"
             />
           </div>
         </div>
       </div>
 
       {/* Media */}
-      <div className="bg-charcoal-900/80 backdrop-blur-2xl p-6 rounded-2xl border border-white/10 shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
-        <h2 className="text-lg font-serif font-medium text-white border-b border-white/10 pb-2 mb-4">Médias (Images)</h2>
+      <div className="bg-[#F3F6F4] border border-[#C5D2CB] shadow-[0_4px_20px_rgba(0,0,0,0.03)] rounded-3xl p-6 md:p-8">
+        <h2 className="text-xl font-sans font-bold text-[#0B150F] border-b border-[#D8E2DC] pb-3 mb-5">Médias (Images)</h2>
         <ImageUploader 
           existingImages={initialData?.media?.images || []} 
           onFilesSelected={setFilesToUpload} 
@@ -343,14 +344,18 @@ export function PropertyForm({ initialData = null }) {
         />
       </div>
 
-      <div className="flex justify-end space-x-4 pt-4">
-        <Button variant="outline" type="button" onClick={() => router.push('/admin/properties')} className="border-white/20 text-white hover:bg-white/10">
+      <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-end gap-3 pt-6 border-t border-[#D8E2DC]">
+        <button 
+          type="button" 
+          onClick={() => router.push('/admin/properties')} 
+          className="w-full sm:w-auto px-6 py-3.5 sm:py-3 rounded-xl bg-[#E2EAE5] hover:bg-[#D3DDD7] text-[#133E26] font-bold text-sm border border-[#B8C9C0] transition-all duration-200 text-center"
+        >
           Annuler
-        </Button>
+        </button>
         <button 
           type="submit" 
           disabled={isSubmitting}
-          className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-b from-[#E3CD86] to-[#C9A227] hover:from-[#F3E6BF] hover:to-[#D4AF37] text-[#090B10] font-bold text-sm shadow-[0_4px_20px_rgba(201,162,39,0.3)] hover:shadow-[0_4px_25px_rgba(201,162,39,0.5)] border border-[#F3E6BF]/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 disabled:opacity-50"
+          className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 sm:py-3 rounded-xl bg-[#133E26] hover:bg-[#1A4F32] text-white font-bold text-sm shadow-[0_4px_15px_rgba(19,62,38,0.25)] hover:shadow-[0_4px_22px_rgba(19,62,38,0.35)] border border-[#2D5A43] hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 disabled:opacity-50"
         >
           {isSubmitting ? 'Enregistrement en cours...' : (initialData ? 'Mettre à jour le bien' : 'Publier le bien')}
         </button>
