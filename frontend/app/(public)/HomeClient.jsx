@@ -40,43 +40,56 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
     // Scroll Reveal for Sections
     const sections = gsap.utils.toArray('.reveal-section');
     sections.forEach(section => {
-      gsap.from(section, {
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 80%',
-        },
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out'
-      });
+      gsap.fromTo(section,
+        { y: 40, opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 90%',
+            toggleActions: 'play none none none',
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: 'power3.out'
+        }
+      );
     });
 
     // Stagger Property Cards
-    gsap.from('.property-card-anim', {
-      scrollTrigger: {
-        trigger: '.properties-grid',
-        start: 'top 80%',
-      },
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: 'power3.out'
-    });
+    gsap.fromTo('.property-card-anim',
+      { y: 40, opacity: 0 },
+      {
+        scrollTrigger: {
+          trigger: '.properties-grid',
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: 'power3.out'
+      }
+    );
 
-    // Stagger Service Cards quickly without delays
-    gsap.from('.service-card-anim', {
-      scrollTrigger: {
-        trigger: '#services',
-        start: 'top 92%',
-      },
-      y: 20,
-      opacity: 0,
-      duration: 0.45,
-      stagger: 0.08,
-      ease: 'power2.out'
-    });
+    // Stagger Service Cards quickly without delays so they are always visible
+    gsap.fromTo('.service-card-anim',
+      { y: 25, opacity: 0 },
+      {
+        scrollTrigger: {
+          trigger: '#services',
+          start: 'top 98%',
+          toggleActions: 'play none none none',
+        },
+        y: 0,
+        opacity: 1,
+        duration: 0.45,
+        stagger: 0.08,
+        ease: 'power2.out',
+        clearProps: 'opacity,transform'
+      }
+    );
   }, { scope: container });
 
   return (
@@ -250,7 +263,7 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
             </Link>
           </div>
 
-          <div className="properties-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="properties-grid grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
             {featuredProperties.length > 0 ? (
               featuredProperties.map(prop => (
                 <div key={prop._id} className="property-card-anim">
@@ -293,7 +306,7 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
             </Link>
           </div>
 
-          <div className="properties-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="properties-grid grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
             {featuredApartments.length > 0 ? (
               featuredApartments.map(prop => (
                 <div key={prop._id} className="property-card-anim">

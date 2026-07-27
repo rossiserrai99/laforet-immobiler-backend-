@@ -38,6 +38,10 @@ function PropertiesCatalogContent() {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [sortBy, setSortBy] = useState('-createdAt');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalProperties, setTotalProperties] = useState(0);
+  const LIMIT_PER_PAGE = 14;
   
   // Filter state (initialize synchronously from URL search params)
   const [filters, setFilters] = useState(() => ({
@@ -47,6 +51,11 @@ function PropertiesCatalogContent() {
     minPrice: '',
     maxPrice: ''
   }));
+
+  // Reset page when filters or sorting change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filters, sortBy]);
 
   // Update filters if URL parameters change during client navigation
   useEffect(() => {
@@ -81,15 +90,21 @@ function PropertiesCatalogContent() {
       if (filters.maxPrice) params.append('price[lte]', filters.maxPrice);
       
       params.append('sort', sortBy);
+      params.append('page', currentPage);
+      params.append('limit', LIMIT_PER_PAGE);
 
       const res = await propertyService.getAll(`?${params.toString()}`);
-      setProperties(res.data?.properties || []);
+      const fetched = res.data?.properties || [];
+      const total = res.data?.total || fetched.length;
+      setProperties(fetched);
+      setTotalProperties(total);
+      setTotalPages(Math.ceil(total / LIMIT_PER_PAGE) || 1);
     } catch (err) {
       console.warn("Failed to fetch properties:", err?.message || "Network Error");
     } finally {
       setIsLoading(false);
     }
-  }, [filters, sortBy]);
+  }, [filters, sortBy, currentPage]);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -344,7 +359,7 @@ function PropertiesCatalogContent() {
             <p className="text-sm text-charcoal-500 font-medium">Recherche en cours…</p>
           </div>
         ) : properties.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
             {properties.map((prop, idx) => (
               <motion.div
                 key={prop._id}
@@ -376,6 +391,65 @@ function PropertiesCatalogContent() {
               <RotateCcw size={14} /> Réinitialiser
             </button>
           </motion.div>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════
+            PAGINATION CONTROLS (MAX 14 PROPERTIES PER PAGE)
+        ═══════════════════════════════════════════════════════════ */}
+        {!isLoading && properties.length > 0 && totalPages > 1 && (
+          <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 py-6 px-6 sm:px-8 rounded-2xl bg-white/90 backdrop-blur-md border border-warm-200/80 shadow-sm">
+            <div className="text-xs sm:text-sm text-charcoal-600 font-medium">
+              Affichage de <span className="font-bold text-charcoal-900">{(currentPage - 1) * LIMIT_PER_PAGE + 1}</span> à{' '}
+              <span className="font-bold text-charcoal-900">{Math.min(currentPage * LIMIT_PER_PAGE, totalProperties)}</span> sur{' '}
+              <span className="font-bold text-gold-600">{totalProperties}</span> biens
+            </div>
+
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              {/* Prev Button */}
+              <button
+                onClick={() => {
+                  setCurrentPage(prev => Math.max(1, prev - 1));
+                  window.scrollTo({ top: 400, behavior: 'smooth' });
+                }}
+                disabled={currentPage === 1}
+                className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border border-warm-300 bg-white hover:bg-warm-100 disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 text-charcoal-800 cursor-pointer"
+              >
+                Précédent
+              </button>
+
+              {/* Page Numbers */}
+              <div className="flex items-center gap-1">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                  <button
+                    key={page}
+                    onClick={() => {
+                      setCurrentPage(page);
+                      window.scrollTo({ top: 400, behavior: 'smooth' });
+                    }}
+                    className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 flex items-center justify-center cursor-pointer ${
+                      currentPage === page
+                        ? 'bg-gold-400 text-charcoal-950 shadow-md shadow-gold-500/20 scale-105'
+                        : 'bg-white border border-warm-200 text-charcoal-700 hover:bg-warm-100'
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ))}
+              </div>
+
+              {/* Next Button */}
+              <button
+                onClick={() => {
+                  setCurrentPage(prev => Math.min(totalPages, prev + 1));
+                  window.scrollTo({ top: 400, behavior: 'smooth' });
+                }}
+                disabled={currentPage === totalPages}
+                className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border border-warm-300 bg-white hover:bg-warm-100 disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 text-charcoal-800 cursor-pointer"
+              >
+                Suivant
+              </button>
+            </div>
+          </div>
         )}
 
       </div>
