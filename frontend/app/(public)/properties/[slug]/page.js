@@ -51,15 +51,13 @@ const WhatsAppIcon = ({ size = 18, className = "" }) => (
   </svg>
 );
 
-// Helper to ensure Cloudinary or external image URLs are loaded in high resolution
-function getHighResUrl(url) {
-  if (!url) return '';
-  if (typeof url !== 'string') return '';
-  if (url.includes('cloudinary.com') && url.includes('/upload/')) {
-    return url.replace(/\/upload\/(?:w_\d+,?|h_\d+,?|c_[a-z]+,?|q_[a-z0-9]+,?)*\//i, '/upload/q_auto:best/');
-  }
-  return url;
-}
+import {
+  getDetailHeroUrl,
+  getDetailThumbnailUrl,
+  getLightboxUrl,
+  getGridImageUrl,
+  getHighResUrl
+} from '@/lib/imagekit';
 
 // Helper to format official Algerian price cleanly
 function formatAlgerianPrice(price, priceHidden) {
@@ -256,10 +254,10 @@ export default function PropertyDetailPage() {
             <div className="relative flex-1 flex items-center justify-center my-4 overflow-hidden" onClick={(e) => e.stopPropagation()}>
               <div className="relative w-full h-full max-h-[75vh] flex items-center justify-center">
                 <Image
-                  src={getHighResUrl(images[currentImageIndex].url)}
+                  src={getLightboxUrl(images[currentImageIndex].url)}
                   alt={`${property.title} - Plein écran`}
                   fill
-                  quality={100}
+                  quality={85}
                   sizes="100vw"
                   className="object-contain"
                   priority
@@ -299,7 +297,7 @@ export default function PropertyDetailPage() {
                     }`}
                   >
                     <Image
-                      src={getHighResUrl(img.url)}
+                      src={getDetailThumbnailUrl(img.url)}
                       alt={`Vignette ${idx + 1}`}
                       fill
                       sizes="64px"
@@ -363,10 +361,10 @@ export default function PropertyDetailPage() {
               {hasImages ? (
                 <>
                   <Image 
-                    src={getHighResUrl(images[currentImageIndex].url)}
+                    src={getDetailHeroUrl(images[currentImageIndex].url)}
                     alt={property.title}
                     fill
-                    quality={95}
+                    quality={85}
                     sizes="100vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                     priority
@@ -431,7 +429,7 @@ export default function PropertyDetailPage() {
                     }`}
                   >
                     <Image
-                      src={getHighResUrl(img.url)}
+                      src={getDetailThumbnailUrl(img.url)}
                       alt={`Vignette ${idx + 1}`}
                       fill
                       sizes="72px"
@@ -688,7 +686,7 @@ export default function PropertyDetailPage() {
                   className="group relative h-64 rounded-2xl overflow-hidden cursor-pointer bg-charcoal-900/10 border border-charcoal-900/10 shadow-sm hover:shadow-xl transition-all"
                 >
                   <Image
-                    src={getHighResUrl(img.url)}
+                    src={getGridImageUrl(img.url)}
                     alt={`Photo ${idx + 1}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

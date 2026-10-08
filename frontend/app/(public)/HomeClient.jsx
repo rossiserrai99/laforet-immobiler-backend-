@@ -12,6 +12,7 @@ import { ArrowRight, Star, Shield, Award, Diamond, Key, Landmark, Building2, Bad
 import leadService from '@/services/lead.service';
 import { InteractiveAlgiersMap } from '@/components/map/InteractiveAlgiersMap';
 import { AgencyLocationMap } from '@/components/map/AgencyLocationMap';
+import { SITE_ASSETS, IMAGEKIT_ASSETS, getImageKitUrl } from '@/lib/imagekit';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,12 +115,15 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
             loop
             muted
             playsInline
-            preload="auto"
-            poster="https://res.cloudinary.com/zt28qj9l/video/upload/v1784947742/Video_Project_5_nkmuyt.jpg"
+            preload="metadata"
+            poster={SITE_ASSETS.heroPoster}
             suppressHydrationWarning
             className="absolute inset-0 w-full h-full object-cover scale-105"
           >
-            <source src="https://res.cloudinary.com/zt28qj9l/video/upload/v1784947742/Video_Project_5_nkmuyt.mp4" type="video/mp4" />
+            {SITE_ASSETS.heroVideoMobile && (
+              <source src={SITE_ASSETS.heroVideoMobile} media="(max-width: 768px)" type="video/mp4" />
+            )}
+            <source src={SITE_ASSETS.heroVideoDesktop} type="video/mp4" />
           </video>
           {/* Lighter Overlays for Text Pop without darkening the entire video */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(24,24,27,0.3)_0%,_transparent_60%)] z-10"></div>
@@ -191,11 +195,12 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
       {/* QUICK LINKS GRID (2x2 on Mobile, Flex on Desktop) */}
       <section className="w-full grid grid-cols-2 md:flex md:flex-row h-auto md:h-[500px] lg:h-[600px]">
         {/* Acheter */}
-        <Link href="/properties?type=Vente" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0">
+        <Link href="/properties?type=Vente" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0 bg-charcoal-900">
           <Image 
-            src="/luxury_house_buy.png" 
+            src={SITE_ASSETS.banner1} 
             alt="Acheter un bien"
             fill
+            sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
           />
           <div className="absolute inset-0 bg-white/30 group-hover:bg-white/10 transition-colors duration-500"></div>
@@ -206,11 +211,12 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         </Link>
         
         {/* Louer */}
-        <Link href="/properties?type=Location" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0">
+        <Link href="/properties?type=Location" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0 bg-charcoal-900">
           <Image 
-            src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src={SITE_ASSETS.banner2} 
             alt="Louer un bien"
             fill
+            sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
           />
           <div className="absolute inset-0 bg-white/30 group-hover:bg-white/10 transition-colors duration-500"></div>
@@ -221,11 +227,12 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         </Link>
 
         {/* Vendre */}
-        <Link href="/estimation" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0">
+        <Link href="/estimation" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0 bg-charcoal-900">
           <Image 
-            src="https://res.cloudinary.com/zt28qj9l/image/upload/v1784965315/stock-photo-real-estate-agent-insurance-sales-representative-young-asian-businessman-handing_qyjsni.webp" 
+            src={SITE_ASSETS.banner3} 
             alt="Vendre avec nous"
             fill
+            sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
           />
           <div className="absolute inset-0 bg-white/30 group-hover:bg-white/10 transition-colors duration-500"></div>
@@ -236,11 +243,12 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         </Link>
 
         {/* Mettre en location */}
-        <Link href="/#contact" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0">
+        <Link href="/#contact" className="relative flex-1 group overflow-hidden aspect-square md:aspect-auto md:min-h-0 bg-charcoal-900">
           <Image 
-            src="https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg" 
+            src={SITE_ASSETS.banner4} 
             alt="Mettre en location"
             fill
+            sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
           />
           <div className="absolute inset-0 bg-white/30 group-hover:bg-white/10 transition-colors duration-500"></div>
@@ -405,7 +413,7 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
         {/* High-Quality Fixed Parallax Background Image */}
         <div 
           className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: `url('https://res.cloudinary.com/zt28qj9l/image/upload/v1785037176/recreate_picture_high_quality_de__202607260438_tmgxak.jpg')` }}
+          style={{ backgroundImage: `url('${IMAGEKIT_ASSETS.parallaxExpertise}')` }}
         >
           {/* Professional multi-stop luxury dark overlay to showcase the high-quality picture while ensuring crisp typography */}
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/85 via-charcoal-950/60 to-charcoal-950/90"></div>

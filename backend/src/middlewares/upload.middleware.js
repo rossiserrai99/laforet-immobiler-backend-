@@ -1,21 +1,23 @@
 const multer = require('multer');
-const { CloudinaryStorage } = require('multer-storage-cloudinary');
-const cloudinary = require('../config/cloudinary');
+const AppError = require('../utils/appError');
 
-const storage = new CloudinaryStorage({
-  cloudinary: cloudinary,
-  params: {
-    folder: 'laforet_properties',
-    allowed_formats: ['jpg', 'jpeg', 'png', 'webp'],
-    transformation: [{ width: 1200, crop: 'limit' }] // Optimize large images
+const storage = multer.memoryStorage();
+
+const fileFilter = (req, file, cb) => {
+  const allowedMimeTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/jpg'];
+  if (allowedMimeTypes.includes(file.mimetype)) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Format de fichier non supporté. Formats acceptés : JPG, JPEG, PNG, WEBP.', 400), false);
   }
-});
+};
 
-const upload = multer({ 
+const upload = multer({
   storage: storage,
   limits: {
-    fileSize: 5 * 1024 * 1024 // 5MB limit
-  }
+    fileSize: 10 * 1024 * 1024 // 10MB limit per image
+  },
+  fileFilter: fileFilter
 });
 
 module.exports = upload;

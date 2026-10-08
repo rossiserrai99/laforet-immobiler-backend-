@@ -8,8 +8,7 @@ import { Search, Globe, ShieldCheck, Building2, Users, X, ArrowRight, Phone, Mai
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import propertyService from '@/services/property.service';
 import leadService from '@/services/lead.service';
-
-const DEFAULT_PROPERTY_IMAGE = "https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg";
+import { DEFAULT_PROPERTY_IMAGE, getAdminThumbnailUrl } from '@/lib/imagekit';
 const getPropertyImage = (property) => {
   if (!property) return DEFAULT_PROPERTY_IMAGE;
   
@@ -240,7 +239,7 @@ export function AdminHeader({ onOpenMobileMenu }) {
                           >
                             <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-gray-100 shrink-0 border border-gray-200">
                               <Image
-                                src={getPropertyImage(p)}
+                                src={getAdminThumbnailUrl(getPropertyImage(p))}
                                 alt={p.title || 'Bien'}
                                 fill
                                 sizes="40px"

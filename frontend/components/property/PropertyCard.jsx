@@ -2,12 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Bed, Bath, Maximize, MapPin, ArrowRight } from 'lucide-react';
+import { getCardThumbnailUrl, DEFAULT_PROPERTY_IMAGE } from '@/lib/imagekit';
 
 export function PropertyCard({ property }) {
   // Use cover image if available, else first image, else placeholder
-  const imageUrl = property.media?.coverImage?.url 
+  const rawImageUrl = property.media?.coverImage?.url 
     || (property.media?.images?.length > 0 ? property.media.images[0].url : null)
-    || '/images/placeholder.jpg';
+    || DEFAULT_PROPERTY_IMAGE;
+
+  const imageUrl = getCardThumbnailUrl(rawImageUrl);
 
   const priceStr = property.priceHidden 
     ? 'Sur demande' 

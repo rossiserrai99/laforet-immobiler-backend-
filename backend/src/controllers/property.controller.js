@@ -3,7 +3,7 @@ const APIFeatures = require('../utils/apiFeatures');
 const asyncHandler = require('../utils/asyncHandler');
 const AppError = require('../utils/AppError');
 const { sendSuccess } = require('../utils/apiResponse');
-const cloudinary = require('../config/cloudinary');
+const { uploadToImageKit, deleteFromImageKit } = require('../config/imagekit');
 const generateSlug = require('../utils/generateSlug');
 
 exports.getAllProperties = asyncHandler(async (req, res, next) => {
@@ -78,20 +78,27 @@ exports.createProperty = asyncHandler(async (req, res, next) => {
     req.body.slug = await generateSlug(Property, req.body.title);
   }
 
-  // Handle uploaded images
+  // Handle uploaded images via ImageKit
   if (req.files && req.files.length > 0) {
+    const uploadedImages = [];
+    for (const file of req.files) {
+      const sanitizedName = file.originalname ? file.originalname.replace(/[^a-zA-Z0-9._-]/g, '_') : 'image.webp';
+      const fileName = `${Date.now()}_${sanitizedName}`;
+      const uploadRes = await uploadToImageKit(file.buffer, fileName, '/laforet_properties');
+      uploadedImages.push({
+        url: uploadRes.url,
+        publicId: uploadRes.fileId
+      });
+    }
+
     req.body.media = {
-      images: req.files.map(file => ({
-        url: file.path,
-        publicId: file.filename
-      }))
+      images: uploadedImages
     };
     
     // Set first image as cover by default
-    req.body.media.coverImage = {
-      url: req.files[0].path,
-      publicId: req.files[0].filename
-    };
+    if (uploadedImages.length > 0) {
+      req.body.media.coverImage = uploadedImages[0];
+    }
   }
 
   try {
@@ -125,14 +132,20 @@ exports.updateProperty = asyncHandler(async (req, res, next) => {
     return next(new AppError('Aucun bien trouvé avec cet ID.', 404));
   }
 
-  // If new images are uploaded, append them
+  // If new images are uploaded, upload to ImageKit and append them
   if (req.files && req.files.length > 0) {
-    const newImages = req.files.map(file => ({
-      url: file.path,
-      publicId: file.filename
-    }));
+    const newImages = [];
+    for (const file of req.files) {
+      const sanitizedName = file.originalname ? file.originalname.replace(/[^a-zA-Z0-9._-]/g, '_') : 'image.webp';
+      const fileName = `${Date.now()}_${sanitizedName}`;
+      const uploadRes = await uploadToImageKit(file.buffer, fileName, '/laforet_properties');
+      newImages.push({
+        url: uploadRes.url,
+        publicId: uploadRes.fileId
+      });
+    }
 
-    if (!req.body.media) req.body.media = {};
+    if (!req.body.media) req.body.media = property.media ? { ...property.media.toObject?.() || property.media } : {};
     req.body.media.images = [...(property.media?.images || []), ...newImages];
     
     // Set coverImage if none exists
@@ -141,7 +154,7 @@ exports.updateProperty = asyncHandler(async (req, res, next) => {
     }
   }
 
-  // Handle deleted images
+  // Handle deleted images via ImageKit
   if (req.body.deletedImages) {
     try {
       const deletedPublicIds = typeof req.body.deletedImages === 'string' 
@@ -150,11 +163,15 @@ exports.updateProperty = asyncHandler(async (req, res, next) => {
       
       for (const publicId of deletedPublicIds) {
         if (publicId) {
-          await cloudinary.uploader.destroy(publicId);
+          try {
+            await deleteFromImageKit(publicId);
+          } catch (delErr) {
+            console.error(`Failed to delete ImageKit asset ${publicId}:`, delErr.message);
+          }
         }
       }
       
-      if (!req.body.media) req.body.media = property.media || {};
+      if (!req.body.media) req.body.media = property.media ? { ...property.media.toObject?.() || property.media } : {};
       
       // Filter out deleted images
       const currentImages = req.body.media.images || property.media?.images || [];
@@ -207,11 +224,15 @@ exports.deleteProperty = asyncHandler(async (req, res, next) => {
     return next(new AppError('Aucun bien trouvé avec cet ID.', 404));
   }
 
-  // Delete images from Cloudinary
+  // Delete images from ImageKit
   if (property.media && property.media.images) {
     for (const image of property.media.images) {
       if (image.publicId) {
-        await cloudinary.uploader.destroy(image.publicId);
+        try {
+          await deleteFromImageKit(image.publicId);
+        } catch (delErr) {
+          console.error(`Failed to delete ImageKit asset ${image.publicId}:`, delErr.message);
+        }
       }
     }
   }

@@ -3,6 +3,7 @@
 import React, { useCallback, useState } from 'react';
 import { UploadCloud, X } from 'lucide-react';
 import Image from 'next/image';
+import { getAdminThumbnailUrl } from '@/lib/imagekit';
 
 export function ImageUploader({ existingImages = [], onFilesSelected, onFilesDeleted }) {
   const [previewUrls, setPreviewUrls] = useState([]);
@@ -114,7 +115,7 @@ export function ImageUploader({ existingImages = [], onFilesSelected, onFilesDel
           {localExistingImages.map((img, idx) => (
             <div key={`existing-${idx}`} className="relative aspect-square rounded-xl overflow-hidden border border-[#C5D2CB] shadow-sm group">
               <Image 
-                src={img.url} 
+                src={getAdminThumbnailUrl(img.url)} 
                 alt={`Existing ${idx}`} 
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"

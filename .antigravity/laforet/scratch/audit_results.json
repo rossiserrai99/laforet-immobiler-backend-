@@ -1,0 +1,236 @@
+{
+  "timestamp": "2026-10-08T22:00:52.958Z",
+  "tests": {
+    "M0_Baseline": [
+      {
+        "testName": "Total properties count equals 27",
+        "pass": true,
+        "details": "Found 27 (expected 27)"
+      },
+      {
+        "testName": "Imported properties count equals 15",
+        "pass": true,
+        "details": "Found 15"
+      },
+      {
+        "testName": "Pre-existing properties count equals 12",
+        "pass": true,
+        "details": "Found 12"
+      }
+    ],
+    "M1_Media": [
+      {
+        "testName": "Media Manifest contains 18 assets",
+        "pass": true,
+        "details": "Count: 18"
+      },
+      {
+        "testName": "All 18 Migrated Assets return HTTP 200 on ImageKit CDN",
+        "pass": true,
+        "details": "18/18 200 OK"
+      },
+      {
+        "testName": "Card Thumbnail Transformation (w-600,h-400) returns 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Detail Thumbnail Transformation (w-150,h-150) returns 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Detail Hero Transformation (w-1600) returns 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      }
+    ],
+    "M2_Assets": [
+      {
+        "testName": "Hero Video Desktop MP4 returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: video/mp4"
+      },
+      {
+        "testName": "Hero Video Poster PNG returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Banner 1 Acheter Local returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/png"
+      },
+      {
+        "testName": "Banner 2 Louer Unsplash returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Banner 3 Vendre ImageKit returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Banner 4 Fallback ImageKit returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Parallax Background ImageKit returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/jpeg"
+      },
+      {
+        "testName": "Admin Login BG Local returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/png"
+      },
+      {
+        "testName": "Brand Logo SVG Local returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: image/svg+xml"
+      }
+    ],
+    "M3_Content": [
+      {
+        "testName": "Inventory row count equals 15",
+        "pass": true,
+        "details": "Count: 15"
+      },
+      {
+        "testName": "Zero demands/requests in inventory (100% Vente/Location)",
+        "pass": true,
+        "details": "Violations: 0"
+      },
+      {
+        "testName": "Zero duplicate source_ids in inventory",
+        "pass": true,
+        "details": "Unique: 15/15"
+      },
+      {
+        "testName": "All 15 communes match canonical Algiers communes",
+        "pass": true,
+        "details": "Invalid: 0"
+      }
+    ],
+    "M4_Admin": [
+      {
+        "testName": "IMPORT_LOG.csv contains entries",
+        "pass": true,
+        "details": "Count: 18"
+      },
+      {
+        "testName": "All 15 inventory properties found in MongoDB",
+        "pass": true,
+        "details": "Found: 15/15"
+      },
+      {
+        "testName": "All 15 property public slugs return 200 OK",
+        "pass": true,
+        "details": "15/15 200 OK"
+      },
+      {
+        "testName": "All property images return 200 on ImageKit CDN",
+        "pass": true,
+        "details": "44/44 200 OK"
+      },
+      {
+        "testName": "All 3 pilot properties exist and verified in DB",
+        "pass": true,
+        "details": "Pilots found: 3/3"
+      }
+    ],
+    "M5_Functional": [
+      {
+        "testName": "Filter type=Vente returns results",
+        "pass": true,
+        "details": "Total Vente: 22"
+      },
+      {
+        "testName": "Filter type=Location returns results",
+        "pass": true,
+        "details": "Total Location: 5"
+      },
+      {
+        "testName": "Vente + Location covers entire inventory",
+        "pass": true,
+        "details": "Sum: 27 (Total 27)"
+      },
+      {
+        "testName": "Filter category=Villa works",
+        "pass": true,
+        "details": "Total Villa: 6"
+      },
+      {
+        "testName": "Filter category=Appartement works",
+        "pass": true,
+        "details": "Total Appartement: 18"
+      },
+      {
+        "testName": "Filter category=Terrain works",
+        "pass": true,
+        "details": "Total Terrain: 1"
+      },
+      {
+        "testName": "Filter commune=Hydra works",
+        "pass": true,
+        "details": "Total Hydra: 4"
+      },
+      {
+        "testName": "Filter commune=El Biar works",
+        "pass": true,
+        "details": "Total El Biar: 3"
+      },
+      {
+        "testName": "Filter price[gte]=100M DZD works",
+        "pass": false,
+        "details": "Count: 0"
+      }
+    ],
+    "M5_Security": [
+      {
+        "testName": "Admin authentication returns valid JWT token",
+        "pass": true,
+        "details": "Status: 200"
+      },
+      {
+        "testName": "Protected media/auth endpoint generates valid signature",
+        "pass": true,
+        "details": "Status: 200"
+      }
+    ],
+    "M5_Frontend": [
+      {
+        "testName": "Homepage (/) returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: text/html; charset=utf-8"
+      },
+      {
+        "testName": "Catalog (/properties) returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: text/html; charset=utf-8"
+      },
+      {
+        "testName": "Detail Page Pilot 1 returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: text/html; charset=utf-8"
+      },
+      {
+        "testName": "Detail Page Pilot 2 returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: text/html; charset=utf-8"
+      },
+      {
+        "testName": "Admin Login (/admin/login) returns HTTP 200",
+        "pass": true,
+        "details": "Status: 200, Type: text/html; charset=utf-8"
+      }
+    ]
+  },
+  "summary": {
+    "total": 42,
+    "passed": 41,
+    "failed": 1
+  }
+}

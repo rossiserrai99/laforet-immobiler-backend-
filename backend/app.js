@@ -15,16 +15,21 @@ const app = express();
 // Trust proxy for secure cookies behind reverse proxies (Vercel/Render/Cloudflare)
 app.set('trust proxy', 1);
 
+// Enable extended query parser for Express 5 (required for nested bracket
+// parameters like price[gte]=X which APIFeatures converts to Mongoose $gte/$lte)
+app.set('query parser', 'extended');
+
 // Security HTTP headers
-// Custom CSP allowing Cloudinary and Google Fonts
+// Custom CSP allowing ImageKit, Cloudinary, and Google Fonts
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
       fontSrc: ["'self'", 'https://fonts.gstatic.com'],
       styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
-      imgSrc: ["'self'", 'data:', 'https://res.cloudinary.com'],
-      connectSrc: ["'self'", process.env.FRONTEND_URL || 'http://localhost:3000'],
+      imgSrc: ["'self'", 'data:', 'blob:', 'https://ik.imagekit.io', 'https://res.cloudinary.com'],
+      mediaSrc: ["'self'", 'data:', 'blob:', 'https://ik.imagekit.io', 'https://res.cloudinary.com'],
+      connectSrc: ["'self'", 'https://ik.imagekit.io', process.env.FRONTEND_URL || 'http://localhost:3000'],
     },
   },
 }));

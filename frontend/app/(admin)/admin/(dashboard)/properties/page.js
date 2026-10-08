@@ -5,8 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Plus, Edit, Trash2, ExternalLink, Building2, Search, Filter } from 'lucide-react';
 import propertyService from '@/services/property.service';
-
-const DEFAULT_PROPERTY_IMAGE = "https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg";
+import { DEFAULT_PROPERTY_IMAGE, getAdminThumbnailUrl } from '@/lib/imagekit';
 const getPropertyImage = (property) => {
   if (!property) return DEFAULT_PROPERTY_IMAGE;
   
@@ -155,7 +154,7 @@ export default function PropertiesPage() {
                       <div className="flex items-center gap-4">
                         <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-charcoal-800 shrink-0 border border-white/10">
                           <Image 
-                            src={getPropertyImage(property)} 
+                            src={getAdminThumbnailUrl(getPropertyImage(property))} 
                             alt={property.title || 'Bien immobilier'}
                             fill
                             sizes="56px"

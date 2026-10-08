@@ -8,8 +8,7 @@ import { Home, Users, CheckCircle, Clock, PlusCircle, ArrowRight, Eye, Mail, Pho
 import adminService from '@/services/admin.service';
 import propertyService from '@/services/property.service';
 import leadService from '@/services/lead.service';
-
-const DEFAULT_PROPERTY_IMAGE = "https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg";
+import { DEFAULT_PROPERTY_IMAGE, getAdminThumbnailUrl } from '@/lib/imagekit';
 const getPropertyImage = (property) => {
   if (!property) return DEFAULT_PROPERTY_IMAGE;
   
@@ -251,7 +250,7 @@ export default function DashboardPage() {
                         <div className="flex items-center gap-4 min-w-0">
                           <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-[#97A39D] shrink-0 border border-[#7D8B84]">
                             <Image 
-                              src={getPropertyImage(property)} 
+                              src={getAdminThumbnailUrl(getPropertyImage(property))} 
                               alt={property.title || 'Bien'}
                               fill
                               sizes="48px"

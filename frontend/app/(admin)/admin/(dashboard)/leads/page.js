@@ -6,8 +6,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Mail, Phone, Calendar, CheckCircle, Trash2, Users, ExternalLink, Home, MessageSquare, CheckCheck } from 'lucide-react';
 import leadService from '@/services/lead.service';
-
-const DEFAULT_PROPERTY_IMAGE = "https://res.cloudinary.com/zt28qj9l/image/upload/v1784965809/make_picture_high_definition_res__202607250849_msbqp4.jpg";
+import { DEFAULT_PROPERTY_IMAGE, getAdminThumbnailUrl } from '@/lib/imagekit';
 const getPropertyImage = (property) => {
   if (!property) return DEFAULT_PROPERTY_IMAGE;
   
@@ -292,7 +291,7 @@ function LeadsPageContent() {
                                 <div className="mt-4 max-w-2xl p-4 rounded-2xl bg-[#11271B]/90 border border-[#2D5A43]/50 flex flex-col sm:flex-row sm:items-center gap-4 shadow-md">
                                   <div className="relative w-28 h-28 sm:w-32 sm:h-28 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/20 bg-charcoal-800">
                                     <Image 
-                                      src={getPropertyImage(lead.propertyId)} 
+                                      src={getAdminThumbnailUrl(getPropertyImage(lead.propertyId))} 
                                       alt={lead.propertyId.title || 'Propriété La Forêt'} 
                                       fill 
                                       sizes="128px"

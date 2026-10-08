@@ -4,6 +4,7 @@ const authRoutes = require('./auth.routes');
 const propertyRoutes = require('./property.routes');
 const leadRoutes = require('./lead.routes');
 const adminRoutes = require('./admin.routes');
+const mediaRoutes = require('./media.routes');
 
 // Health check endpoint
 router.get('/health', (req, res) => {
@@ -18,5 +19,6 @@ router.use('/auth', authRoutes);
 router.use('/properties', propertyRoutes);
 router.use('/leads', leadRoutes);
 router.use('/admin', adminRoutes);
+router.use('/media', mediaRoutes);
 
 module.exports = router;
