@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Playfair+Display:wght@700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -62,6 +63,26 @@
   }
 }
 
+/* Logo Typography (SVG Branding) */
+.logo-sm {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+.logo-lg {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 78px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.logo-xs {
+  font-family: 'Cinzel', system-ui, sans-serif;
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 4.5px;
+}
+
 /* Animations */
 @keyframes shimmer {
   100% {
@@ -71,6 +92,21 @@
 
 .animate-shimmer {
   animation: shimmer 1.5s infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  display: flex;
+  width: max-content;
 }
 
 .luxury-maplibre-popup .maplibregl-popup-content {

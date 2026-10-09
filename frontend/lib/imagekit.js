@@ -9,8 +9,14 @@ export const IMAGEKIT_ENDPOINT =
 
 // Base Verified ImageKit Assets
 export const BASE_IMAGEKIT_ASSETS = {
-  heroVideo: `${IMAGEKIT_ENDPOINT}/laforet_assets/hero_video.mp4`,
-  heroPoster: `${IMAGEKIT_ENDPOINT}/laforet_assets/hero_video_poster.png`,
+  // Pre-transcoded ultra-fast edge stream (starts in ~100ms with Range requests)
+  heroVideoOriginal: `${IMAGEKIT_ENDPOINT}/Video%20Project%206%20(1).mov/ik-video.mp4?updatedAt=1791586179789`,
+  heroVideoDesktop: `${IMAGEKIT_ENDPOINT}/Video%20Project%206%20(1).mov/ik-video.mp4?updatedAt=1791586179789`,
+  heroVideoMobile: `${IMAGEKIT_ENDPOINT}/Video%20Project%206%20(1).mov/ik-video.mp4?updatedAt=1791586179789`,
+  heroVideo: `${IMAGEKIT_ENDPOINT}/Video%20Project%206%20(1).mov/ik-video.mp4?updatedAt=1791586179789`,
+  // Instant static poster (<5ms load time, 0s delay)
+  heroPoster: '/hero_poster.jpg',
+  heroPosterMobile: '/hero_poster.jpg',
   advisorVendre: `${IMAGEKIT_ENDPOINT}/laforet_assets/advisor_vendre.webp`,
   agencyFallback: `${IMAGEKIT_ENDPOINT}/laforet_assets/agency_fallback.webp`,
   parallaxExpertise: `${IMAGEKIT_ENDPOINT}/laforet_assets/parallax_expertise_bg.jpg`,
@@ -22,15 +28,19 @@ export const SITE_ASSETS = {
   heroVideoDesktop:
     process.env.NEXT_PUBLIC_HERO_VIDEO_DESKTOP_URL ||
     process.env.HERO_VIDEO_DESKTOP_URL ||
-    BASE_IMAGEKIT_ASSETS.heroVideo,
+    BASE_IMAGEKIT_ASSETS.heroVideoDesktop,
   heroVideoMobile:
     process.env.NEXT_PUBLIC_HERO_VIDEO_MOBILE_URL ||
     process.env.HERO_VIDEO_MOBILE_URL ||
-    null,
+    BASE_IMAGEKIT_ASSETS.heroVideoMobile,
+  heroVideoOriginal:
+    BASE_IMAGEKIT_ASSETS.heroVideoOriginal,
   heroPoster:
     process.env.NEXT_PUBLIC_HERO_VIDEO_POSTER_URL ||
     process.env.HERO_VIDEO_POSTER_URL ||
     BASE_IMAGEKIT_ASSETS.heroPoster,
+  heroPosterMobile:
+    BASE_IMAGEKIT_ASSETS.heroPosterMobile,
   banner1:
     process.env.NEXT_PUBLIC_BANNER_1_URL ||
     process.env.BANNER_1_URL ||

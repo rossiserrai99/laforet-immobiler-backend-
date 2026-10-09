@@ -29,29 +29,9 @@ export function Logo({ className, variant = 'default' }) {
       className={className}
       width="100%"
       height="100%"
+      suppressHydrationWarning
     >
       <defs>
-        <style>{`
-          @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Playfair+Display:wght@700&display=swap');
-          .logo-sm {
-            font-family: 'Cinzel', 'Times New Roman', serif;
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 8px;
-          }
-          .logo-lg {
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 78px;
-            font-weight: 700;
-            letter-spacing: 3px;
-          }
-          .logo-xs {
-            font-family: 'Cinzel', system-ui, sans-serif;
-            font-size: 10.5px;
-            font-weight: 400;
-            letter-spacing: 4.5px;
-          }
-        `}</style>
 
         {/* Lateral shading gradient — left (light) to right (shadow) for 3D depth */}
         <linearGradient id={litId} x1="0%" y1="0%" x2="100%" y2="0%">

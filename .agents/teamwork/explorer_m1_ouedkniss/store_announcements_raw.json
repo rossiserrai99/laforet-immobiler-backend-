@@ -1,0 +1,3952 @@
+[
+  {
+    "id": "58058097",
+    "title": "Location Villa Alger Alger centre",
+    "slug": "villa-location-alger-centre-algerie",
+    "createdAt": "2026-10-03T11:38:21.503344Z",
+    "status": "PUBLISHED",
+    "price": 220000,
+    "priceUnit": "UNIT",
+    "pricePreview": 220000,
+    "category": {
+      "id": "81",
+      "name": "Villa",
+      "slug": "immobilier-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/taATbHDXECDdnFbcgn1xmTc42WUY7QHnafkasyxM.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "58057974",
+    "title": "Vente bien immobilier Alger Alger centre",
+    "slug": "autre-vente-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-10-03T11:32:41.304278Z",
+    "status": "PUBLISHED",
+    "price": 3500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 350,
+    "category": {
+      "id": "76",
+      "name": "Autre",
+      "slug": "immobilier-vente-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/4PWfFYtDw3NAT7om53F2O4NotUYJHD3F8G55O4Te.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57924648",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-09-26T11:44:09.142722Z",
+    "status": "PUBLISHED",
+    "price": 4850000,
+    "priceUnit": "MILLION",
+    "pricePreview": 485,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/4nxmx/k9vSDxe2j6BGSaFYVIsBJqqSS9tgIfYoEqV6cA2U.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57924513",
+    "title": "Vente Villa Alger Alger centre",
+    "slug": "villa-vente-alger-centre-algerie",
+    "createdAt": "2026-09-26T11:40:03.035866Z",
+    "status": "PUBLISHED",
+    "price": 4500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 450,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/qHI3HR3T23iIigJ3Y2353Re3LkwCYQZ2Vekj7VX5.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57691038",
+    "title": "Location Appartement Alger Alger centre",
+    "slug": "appartement-location-alger-centre-algerie",
+    "createdAt": "2026-09-13T13:52:48.648828Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "UNIT",
+    "pricePreview": null,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/d4HWcRNw1krvIdyhSP4qopGEt8LDctS94wrcfKHU.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57568464",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-09-06T14:02:36.521991Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/7bKoWmnNnQ6ABRSccX8Tmw3IuHkqcMQ7WVhapK9h.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57584418",
+    "title": "Location Appartement F2 Alger Alger centre",
+    "slug": "appartement-location-f2-alger-centre-algerie",
+    "createdAt": "2026-09-07T11:20:50.505386Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "UNIT",
+    "pricePreview": null,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/EI5PYrTYgRpD1m8WMTUExcbM96UDkCIkTP0HO27e.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57690858",
+    "title": "Location Villa Alger Hydra",
+    "slug": "villa-location-alger-hydra-algerie",
+    "createdAt": "2026-09-13T13:46:11.809291Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "UNIT",
+    "pricePreview": null,
+    "category": {
+      "id": "81",
+      "name": "Villa",
+      "slug": "immobilier-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "594",
+        "name": "Hydra",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/Fi3ezw0aRxe1H8Zs9OpOLQvoAWmqCDjH5lfNdwhZ.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57690927",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-09-13T13:48:41.558858Z",
+    "status": "PUBLISHED",
+    "price": 4500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 450,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "57690978",
+    "title": "Vente Villa Alger Bir mourad rais",
+    "slug": "villa-vente-alger-bir-mourad-rais-algerie",
+    "createdAt": "2026-09-13T13:50:30.191525Z",
+    "status": "PUBLISHED",
+    "price": 3000000,
+    "priceUnit": "MILLION",
+    "pricePreview": 300,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "568",
+        "name": "Bir mourad rais",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/gkkxQX8bLUaKf6llE1ebEnoLU6V8QcUhSoOJfWJE.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57691095",
+    "title": "Location Villa Alger El biar",
+    "slug": "villa-location-alger-el-biar-algerie",
+    "createdAt": "2026-09-13T13:55:40.054480Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "UNIT",
+    "pricePreview": null,
+    "category": {
+      "id": "81",
+      "name": "Villa",
+      "slug": "immobilier-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/fGWX57tFplVKFRlsQOz0n2JWhONhC2ywOC37rn2E.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57924129",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-09-26T11:27:24.074497Z",
+    "status": "PUBLISHED",
+    "price": 6500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 650,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/uywc7QnUTAFfyCAfg0z4wsNdHq9XS4jSStEWP7pX.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57924207",
+    "title": "Vente Appartement F3 Alger Mohammadia",
+    "slug": "appartement-vente-f3-alger-mohammadia-algerie",
+    "createdAt": "2026-09-26T11:29:59.233915Z",
+    "status": "PUBLISHED",
+    "price": 260000,
+    "priceUnit": "MILLION",
+    "pricePreview": 26,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "599",
+        "name": "Mohammadia",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "57924270",
+    "title": "Vente Villa Alger Alger centre",
+    "slug": "villa-vente-alger-centre-algerie",
+    "createdAt": "2026-09-26T11:32:07.509471Z",
+    "status": "PUBLISHED",
+    "price": 2100000,
+    "priceUnit": "MILLION",
+    "pricePreview": 210,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "57924384",
+    "title": "Vente Appartement F9 Alger Alger centre",
+    "slug": "appartement-vente-f9-alger-centre-algerie",
+    "createdAt": "2026-09-26T11:35:53.725653Z",
+    "status": "PUBLISHED",
+    "price": 1600000,
+    "priceUnit": "MILLION",
+    "pricePreview": 160,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/zL75WwRr8dMvMXo0a1sqIMoe995xK8xebQywiOOG.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57924558",
+    "title": "Vente Terrain Alger El achour",
+    "slug": "terrain-vente-alger-el-achour-algerie",
+    "createdAt": "2026-09-26T11:41:46.215595Z",
+    "status": "PUBLISHED",
+    "price": 17500000,
+    "priceUnit": "UNIT_PER_SQUARE",
+    "pricePreview": 175000,
+    "category": {
+      "id": "70",
+      "name": "Terrain",
+      "slug": "immobilier-vente-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "583",
+        "name": "El achour",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "57931518",
+    "title": "Vente Terrain Alger Birkhadem",
+    "slug": "terrain-vente-alger-birkhadem-algerie",
+    "createdAt": "2026-09-26T16:40:02.402384Z",
+    "status": "PUBLISHED",
+    "price": 2500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 250,
+    "category": {
+      "id": "70",
+      "name": "Terrain",
+      "slug": "immobilier-vente-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "569",
+        "name": "Birkhadem",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "58057620",
+    "title": "Vente Appartement Alger Alger centre",
+    "slug": "appartement-vente-alger-centre-algerie",
+    "createdAt": "2026-10-03T11:20:03.852822Z",
+    "status": "PUBLISHED",
+    "price": 1650000,
+    "priceUnit": "MILLION",
+    "pricePreview": 165,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/4nxmx/dEUs2uCufqqzleJoK2oGxYWWWchI6BAF8LfyjMy8.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "58058031",
+    "title": "Vente bien immobilier Alger Alger centre",
+    "slug": "autre-vente-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-10-03T11:34:54.963625Z",
+    "status": "PUBLISHED",
+    "price": 2100000,
+    "priceUnit": "MILLION",
+    "pricePreview": 210,
+    "category": {
+      "id": "76",
+      "name": "Autre",
+      "slug": "immobilier-vente-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/5puAaNhfviM9n82Pk6jFqIDKbp9RBcX4UGBxHArQ.jpg"
+    },
+    "source_page": 1
+  },
+  {
+    "id": "57568401",
+    "title": "Cherche achat Terrain Alger Alger centre",
+    "slug": "terrain-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-09-06T13:58:56.196861Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 1
+  },
+  {
+    "id": "55848394",
+    "title": "Location Appartement Alger Alger centre",
+    "slug": "appartement-location-alger-centre-algerie",
+    "createdAt": "2026-06-06T10:41:34.950657Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/95irzNuh4rIT5syT2N8EkRSdVunR4LDYxexFGFYz.jpg"
+    },
+    "source_page": 2
+  },
+  {
+    "id": "56149354",
+    "title": "Vente Villa Alger Alger centre",
+    "slug": "villa-vente-alger-centre-algerie",
+    "createdAt": "2026-06-22T10:31:54.650063Z",
+    "status": "PUBLISHED",
+    "price": 450000,
+    "priceUnit": "MILLION",
+    "pricePreview": 45,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57054753",
+    "title": "Cherche achat bien immobilier Alger Hydra",
+    "slug": "autre-cherche-achat-bien-immobilier-alger-hydra-algerie",
+    "createdAt": "2026-08-09T13:22:58.864338Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "106",
+      "name": "Autre",
+      "slug": "immobilier-cherche-achat-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "594",
+        "name": "Hydra",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56149390",
+    "title": "Vente bien immobilier Alger Alger centre",
+    "slug": "autre-vente-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-06-22T10:33:11.744906Z",
+    "status": "PUBLISHED",
+    "price": 2200000,
+    "priceUnit": "MILLION",
+    "pricePreview": 220,
+    "category": {
+      "id": "76",
+      "name": "Autre",
+      "slug": "immobilier-vente-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56011294",
+    "title": "Vente Appartement Alger Alger centre",
+    "slug": "appartement-vente-alger-centre-algerie",
+    "createdAt": "2026-06-14T17:29:43.221539Z",
+    "status": "PUBLISHED",
+    "price": 620000,
+    "priceUnit": "MILLION",
+    "pricePreview": 62,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/U6rTnkdBHYx1x96wB2IpwEuPeTgS9leLpoij3Lwj.jpg"
+    },
+    "source_page": 2
+  },
+  {
+    "id": "57296094",
+    "title": "Location Villa Alger El biar",
+    "slug": "villa-location-alger-el-biar-algerie",
+    "createdAt": "2026-08-22T10:29:56.313099Z",
+    "status": "PUBLISHED",
+    "price": 850000,
+    "priceUnit": "UNIT",
+    "pricePreview": 850000,
+    "category": {
+      "id": "81",
+      "name": "Villa",
+      "slug": "immobilier-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/4nxmx/lbiBayzPwpmKpOlAJ3S1YoBTb3hDqcQ2L1LDtMXj.jpg"
+    },
+    "source_page": 2
+  },
+  {
+    "id": "57568362",
+    "title": "Cherche achat Immeuble Alger Alger centre",
+    "slug": "immeuble-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-09-06T13:57:00.790747Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "105",
+      "name": "Immeuble",
+      "slug": "immobilier-cherche-achat-immeuble",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56512259",
+    "title": "Vente Appartement F4 Alger Alger centre",
+    "slug": "appartement-vente-f4-alger-centre-algerie",
+    "createdAt": "2026-07-11T19:21:21.745606Z",
+    "status": "PUBLISHED",
+    "price": 480000,
+    "priceUnit": "MILLION",
+    "pricePreview": 48,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/EMn58tW5lwEQdwTKFZ4TgUkzvyUOZbl2ea4MZPcN.jpg"
+    },
+    "source_page": 2
+  },
+  {
+    "id": "56287483",
+    "title": "Cherche location Appartement Alger Ouled fayet",
+    "slug": "appartement-cherche-location-alger-ouled-fayet-algerie",
+    "createdAt": "2026-06-29T18:07:17.151887Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "601",
+        "name": "Ouled fayet",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57568287",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-09-06T13:53:44.282414Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57457662",
+    "title": "Cherche location Local Appartement Alger Alger centre",
+    "slug": "local-cherche-location-appartement-alger-centre-algerie",
+    "createdAt": "2026-08-31T12:06:29.563931Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "113",
+      "name": "Local",
+      "slug": "immobilier-cherche-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57456750",
+    "title": "Location Local Alger Sidi mhamed",
+    "slug": "local-location-alger-sidi-mhamed-algerie",
+    "createdAt": "2026-08-31T11:28:26.711374Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "83",
+      "name": "Local",
+      "slug": "immobilier-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "610",
+        "name": "Sidi mhamed",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/hpZtKu8nE7kZqEuXOzrk5EUHlAxBqdbiO1EL33kZ.jpg"
+    },
+    "source_page": 2
+  },
+  {
+    "id": "57568377",
+    "title": "Cherche achat bien immobilier Alger Alger centre",
+    "slug": "autre-cherche-achat-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-09-06T13:58:07.749103Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "106",
+      "name": "Autre",
+      "slug": "immobilier-cherche-achat-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56040061",
+    "title": "Cherche achat bien immobilier Alger Alger centre",
+    "slug": "autre-cherche-achat-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-06-16T10:22:49.601109Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "106",
+      "name": "Autre",
+      "slug": "immobilier-cherche-achat-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57456225",
+    "title": "Cherche location Local Alger Alger centre",
+    "slug": "local-cherche-location-alger-centre-algerie",
+    "createdAt": "2026-08-31T11:09:31.332359Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "113",
+      "name": "Local",
+      "slug": "immobilier-cherche-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56858333",
+    "title": "Cherche location Terrain Blida Blida",
+    "slug": "terrain-cherche-location-blida-algerie",
+    "createdAt": "2026-07-30T11:47:34.952307Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "115",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-location-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "290",
+        "name": "Blida",
+        "region": {
+          "id": "9",
+          "name": "Blida"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57316779",
+    "title": "Cherche location Villa Alger Dely brahim",
+    "slug": "villa-cherche-location-alger-dely-brahim-algerie",
+    "createdAt": "2026-08-23T10:25:17.866321Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "111",
+      "name": "Villa",
+      "slug": "immobilier-cherche-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "580",
+        "name": "Dely brahim",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "57054741",
+    "title": "Cherche location bien immobilier Alger Alger centre",
+    "slug": "autre-cherche-location-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2026-08-09T13:22:13.449342Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "121",
+      "name": "Autre",
+      "slug": "immobilier-cherche-location-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "56040073",
+    "title": "Cherche location Local Alger Alger centre",
+    "slug": "local-cherche-location-alger-centre-algerie",
+    "createdAt": "2026-06-16T10:23:50.880718Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "113",
+      "name": "Local",
+      "slug": "immobilier-cherche-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "55539691",
+    "title": "Cherche location Appartement F6 Alger Alger centre",
+    "slug": "appartement-cherche-location-f6-alger-centre-algerie",
+    "createdAt": "2026-05-17T14:05:13.979950Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 2
+  },
+  {
+    "id": "55092997",
+    "title": "Cherche location Appartement F2 F3 Alger Alger centre",
+    "slug": "appartement-cherche-location-f2-f3-alger-centre-algerie",
+    "createdAt": "2026-04-23T16:29:20.638412Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "52544141",
+    "title": "Vente Villa Alger El mouradia",
+    "slug": "villa-vente-alger-el-mouradia-algerie",
+    "createdAt": "2025-11-30T18:02:27.058262Z",
+    "status": "PUBLISHED",
+    "price": 3300000,
+    "priceUnit": "MILLION",
+    "pricePreview": 330,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "589",
+        "name": "El mouradia",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54210635",
+    "title": "Vente Villa Alger Douera",
+    "slug": "villa-vente-alger-douera-algerie",
+    "createdAt": "2026-03-02T16:17:21.370772Z",
+    "status": "PUBLISHED",
+    "price": 1250000,
+    "priceUnit": "MILLION",
+    "pricePreview": 125,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "581",
+        "name": "Douera",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/vn8re4nfxX2jMUpRefUKTMNDGriZAuKtEoCx9FyE.jpg"
+    },
+    "source_page": 3
+  },
+  {
+    "id": "55464928",
+    "title": "Vente bien immobilier Alger Bab ezzouar",
+    "slug": "autre-vente-bien-immobilier-alger-bab-ezzouar-algerie",
+    "createdAt": "2026-05-13T17:41:39.469855Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "76",
+      "name": "Autre",
+      "slug": "immobilier-vente-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "561",
+        "name": "Bab ezzouar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "53928290",
+    "title": "Location Villa Alger Alger centre",
+    "slug": "villa-location-alger-centre-algerie",
+    "createdAt": "2026-02-12T14:00:42.345155Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "UNIT",
+    "pricePreview": null,
+    "category": {
+      "id": "81",
+      "name": "Villa",
+      "slug": "immobilier-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/4nxmx/K2rsvsFcknnHV5ur3aQdJSSH3jm3oJ5oNY1dLomL.jpg"
+    },
+    "source_page": 3
+  },
+  {
+    "id": "53850155",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-02-08T13:09:51.619785Z",
+    "status": "PUBLISHED",
+    "price": 1700000,
+    "priceUnit": "MILLION",
+    "pricePreview": 170,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54522602",
+    "title": "Vente Villa Alger Draria",
+    "slug": "villa-vente-alger-draria-algerie",
+    "createdAt": "2026-03-24T16:27:15.328402Z",
+    "status": "PUBLISHED",
+    "price": 24000000,
+    "priceUnit": "UNIT_PER_SQUARE",
+    "pricePreview": 240000,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "582",
+        "name": "Draria",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "55413787",
+    "title": "Cherche achat Terrain Alger Birkhadem",
+    "slug": "terrain-cherche-achat-alger-birkhadem-algerie",
+    "createdAt": "2026-05-11T09:49:48.194940Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "569",
+        "name": "Birkhadem",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "52596981",
+    "title": "Cherche location Villa Alger Hydra",
+    "slug": "villa-cherche-location-alger-hydra-algerie",
+    "createdAt": "2025-12-02T18:41:39.868411Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "111",
+      "name": "Villa",
+      "slug": "immobilier-cherche-location-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "594",
+        "name": "Hydra",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "53698934",
+    "title": "Cherche achat Appartement F4 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f4-alger-centre-algerie",
+    "createdAt": "2026-01-31T10:45:35.231937Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54670706",
+    "title": "Cherche location Appartement F3 Alger El biar",
+    "slug": "appartement-cherche-location-f3-alger-el-biar-algerie",
+    "createdAt": "2026-03-31T16:51:46.631453Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54990487",
+    "title": "Location Appartement F4 Alger Alger centre",
+    "slug": "appartement-location-f4-alger-centre-algerie",
+    "createdAt": "2026-04-18T10:26:02.360424Z",
+    "status": "PUBLISHED",
+    "price": 220000,
+    "priceUnit": "UNIT",
+    "pricePreview": 220000,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "55092979",
+    "title": "Cherche achat Local Alger Alger centre",
+    "slug": "local-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-04-23T16:28:04.598273Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "98",
+      "name": "Local",
+      "slug": "immobilier-cherche-achat-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "55371691",
+    "title": "Cherche location bien immobilier Alger El biar",
+    "slug": "autre-cherche-location-bien-immobilier-alger-el-biar-algerie",
+    "createdAt": "2026-05-09T10:14:10.672165Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "121",
+      "name": "Autre",
+      "slug": "immobilier-cherche-location-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54238178",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-03-04T11:32:25.199488Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "54210830",
+    "title": "Cherche achat Appartement F2 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f2-alger-centre-algerie",
+    "createdAt": "2026-03-02T16:31:36.653453Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "53874170",
+    "title": "Vente Villa Alger El biar",
+    "slug": "villa-vente-alger-el-biar-algerie",
+    "createdAt": "2026-02-09T16:11:52.779882Z",
+    "status": "PUBLISHED",
+    "price": 2200000,
+    "priceUnit": "MILLION",
+    "pricePreview": 220,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "584",
+        "name": "El biar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "53667854",
+    "title": "Cherche achat Terrain Alger Alger centre",
+    "slug": "terrain-cherche-achat-alger-centre-algerie",
+    "createdAt": "2026-01-29T10:47:38.562666Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "52058637",
+    "title": "Cherche achat Immeuble Alger Bab ezzouar",
+    "slug": "immeuble-cherche-achat-alger-bab-ezzouar-algerie",
+    "createdAt": "2025-11-10T17:37:21.762271Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "105",
+      "name": "Immeuble",
+      "slug": "immobilier-cherche-achat-immeuble",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "561",
+        "name": "Bab ezzouar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "52379665",
+    "title": "Cherche achat Terrain Alger Alger centre",
+    "slug": "terrain-cherche-achat-alger-centre-algerie",
+    "createdAt": "2025-11-23T17:32:06.343474Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 3
+  },
+  {
+    "id": "45573206",
+    "title": "Cherche location Appartement Alger Alger centre",
+    "slug": "appartement-cherche-location-alger-centre-algerie",
+    "createdAt": "2024-12-10T14:07:48.261527Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "49690637",
+    "title": "Vente Villa Alger Birkhadem",
+    "slug": "villa-vente-alger-birkhadem-algerie",
+    "createdAt": "2025-07-30T17:07:34.944574Z",
+    "status": "PUBLISHED",
+    "price": 1600000,
+    "priceUnit": "MILLION",
+    "pricePreview": 160,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "569",
+        "name": "Birkhadem",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn8.ouedkniss.com/medias/announcements/images/4nxmx/VApOALaFrDMDf95Gfn1VmruooXYCN0WLZkSxv0RZ.jpg"
+    },
+    "source_page": 4
+  },
+  {
+    "id": "52058561",
+    "title": "Cherche achat Terrain Alger Bab ezzouar",
+    "slug": "terrain-cherche-achat-alger-bab-ezzouar-algerie",
+    "createdAt": "2025-11-10T17:35:41.793897Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "561",
+        "name": "Bab ezzouar",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "47475437",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2025-04-05T10:21:52.775890Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "44032885",
+    "title": "Vente bien immobilier Alger Hussein dey",
+    "slug": "autre-vente-bien-immobilier-alger-hussein-dey-algerie",
+    "createdAt": "2024-09-23T10:22:26.666012Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "76",
+      "name": "Autre",
+      "slug": "immobilier-vente-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "593",
+        "name": "Hussein dey",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "50417680",
+    "title": "Vente Terrain Alger Birkhadem",
+    "slug": "terrain-vente-alger-birkhadem-algerie",
+    "createdAt": "2025-09-03T16:51:01.852772Z",
+    "status": "PUBLISHED",
+    "price": 2000000000,
+    "priceUnit": "UNIT_PER_SQUARE",
+    "pricePreview": 500000,
+    "category": {
+      "id": "70",
+      "name": "Terrain",
+      "slug": "immobilier-vente-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "569",
+        "name": "Birkhadem",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "47797192",
+    "title": "Vente Appartement Alger Alger centre",
+    "slug": "appartement-vente-alger-centre-algerie",
+    "createdAt": "2025-04-21T18:24:41.109363Z",
+    "status": "PUBLISHED",
+    "price": 1200000,
+    "priceUnit": "MILLION",
+    "pricePreview": 120,
+    "category": {
+      "id": "64",
+      "name": "Appartement",
+      "slug": "immobilier-vente-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "51601397",
+    "title": "Location Appartement F2 Alger Alger centre",
+    "slug": "appartement-location-f2-alger-centre-algerie",
+    "createdAt": "2025-10-25T13:32:00.973877Z",
+    "status": "PUBLISHED",
+    "price": 13500,
+    "priceUnit": "UNIT",
+    "pricePreview": 13500,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/4fS8BFRLNNKDnP3zGj3hzpUbUgmGaoPRbI2WBMfu.jpg"
+    },
+    "source_page": 4
+  },
+  {
+    "id": "43831391",
+    "title": "Vente Terrain Alger Gue de constantine",
+    "slug": "terrain-vente-alger-gue-de-constantine-algerie",
+    "createdAt": "2024-09-11T17:44:46.044577Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "70",
+      "name": "Terrain",
+      "slug": "immobilier-vente-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "590",
+        "name": "Gue de constantine",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "47475449",
+    "title": "Cherche achat Appartement Alger Alger centre",
+    "slug": "appartement-cherche-achat-alger-centre-algerie",
+    "createdAt": "2025-04-05T10:22:43.237724Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "44032780",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2024-09-23T10:19:05.697014Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "47797387",
+    "title": "Vente Terrain Alger Alger centre",
+    "slug": "terrain-vente-alger-centre-algerie",
+    "createdAt": "2025-04-21T18:33:04.528283Z",
+    "status": "PUBLISHED",
+    "price": 2300000,
+    "priceUnit": "MILLION",
+    "pricePreview": 230,
+    "category": {
+      "id": "70",
+      "name": "Terrain",
+      "slug": "immobilier-vente-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "47475467",
+    "title": "Cherche location Appartement Alger Alger centre",
+    "slug": "appartement-cherche-location-alger-centre-algerie",
+    "createdAt": "2025-04-05T10:23:35.926329Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "45573230",
+    "title": "Cherche achat Appartement Alger Alger centre",
+    "slug": "appartement-cherche-achat-alger-centre-algerie",
+    "createdAt": "2024-12-10T14:08:52.434398Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "45573185",
+    "title": "Cherche location Local Alger Alger centre",
+    "slug": "local-cherche-location-alger-centre-algerie",
+    "createdAt": "2024-12-10T14:06:50.815914Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "113",
+      "name": "Local",
+      "slug": "immobilier-cherche-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "45573149",
+    "title": "Cherche location Appartement Alger Alger centre",
+    "slug": "appartement-cherche-location-alger-centre-algerie",
+    "createdAt": "2024-12-10T14:05:46.854763Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "48986180",
+    "title": "Cherche location Appartement F4 Alger Alger centre",
+    "slug": "appartement-cherche-location-f4-alger-centre-algerie",
+    "createdAt": "2025-06-26T16:30:20.266053Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "48986138",
+    "title": "Cherche location Appartement Alger Alger centre",
+    "slug": "appartement-cherche-location-alger-centre-algerie",
+    "createdAt": "2025-06-26T16:28:20.307678Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "46423187",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2025-01-26T17:59:40.244840Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "50121551",
+    "title": "Cherche location Appartement F6 Alger Alger centre",
+    "slug": "appartement-cherche-location-f6-alger-centre-algerie",
+    "createdAt": "2025-08-19T17:46:02.174858Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 4
+  },
+  {
+    "id": "39710157",
+    "title": "Cherche achat Appartement F2 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f2-alger-centre-algerie",
+    "createdAt": "2024-02-13T10:39:00.691299Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "38144205",
+    "title": "Cherche achat Local Alger Alger centre",
+    "slug": "local-cherche-achat-alger-centre-algerie",
+    "createdAt": "2023-10-17T20:19:28.177473Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "98",
+      "name": "Local",
+      "slug": "immobilier-cherche-achat-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "38654350",
+    "title": "Cherche location Appartement F2 Alger Alger centre",
+    "slug": "appartement-cherche-location-f2-alger-centre-algerie",
+    "createdAt": "2023-11-22T10:20:39.036802Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "40693771",
+    "title": "Cherche achat Appartement F5 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f5-alger-centre-algerie",
+    "createdAt": "2024-04-13T12:46:11.334898Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "39217811",
+    "title": "Vente Villa Alger Alger centre",
+    "slug": "villa-vente-alger-centre-algerie",
+    "createdAt": "2024-01-07T16:30:52.877503Z",
+    "status": "PUBLISHED",
+    "price": 1500000,
+    "priceUnit": "MILLION",
+    "pricePreview": 150,
+    "category": {
+      "id": "66",
+      "name": "Villa",
+      "slug": "immobilier-vente-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "63",
+          "name": "Vente",
+          "slug": "immobilier-vente"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn7.ouedkniss.com/medias/announcements/images/4nxmx/oBspvXFIM2ArQGjggmVRk6XgVUYseealkgb7TSzx.jpg"
+    },
+    "source_page": 5
+  },
+  {
+    "id": "42302815",
+    "title": "Cherche location Appartement F3 Alger Alger centre",
+    "slug": "appartement-cherche-location-f3-alger-centre-algerie",
+    "createdAt": "2024-06-27T17:08:52.059337Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "41141737",
+    "title": "Cherche achat Terrain Alger Alger centre",
+    "slug": "terrain-cherche-achat-alger-centre-algerie",
+    "createdAt": "2024-05-02T09:45:32.791824Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "42302839",
+    "title": "Cherche achat Appartement Alger Alger centre",
+    "slug": "appartement-cherche-achat-alger-centre-algerie",
+    "createdAt": "2024-06-27T17:09:54.170641Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "38654806",
+    "title": "Location Appartement Alger Alger centre",
+    "slug": "appartement-location-alger-centre-algerie",
+    "createdAt": "2023-11-22T10:52:36.487540Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "79",
+      "name": "Appartement",
+      "slug": "immobilier-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "78",
+          "name": "Location",
+          "slug": "immobilier-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": {
+      "mediaUrl": "https://cdn9.ouedkniss.com/medias/announcements/images/4nxmx/oqQyTkqPY4oc1WDaEKrQl13ghuNNWhOmO8XAMhZN.jpg"
+    },
+    "source_page": 5
+  },
+  {
+    "id": "35759005",
+    "title": "Cherche achat Appartement F1 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f1-alger-centre-algerie",
+    "createdAt": "2023-04-13T11:01:23.468663Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "34137320",
+    "title": "Cherche location bien immobilier Alger Alger centre",
+    "slug": "autre-cherche-location-bien-immobilier-alger-centre-algerie",
+    "createdAt": "2022-11-07T11:03:02.382012Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "121",
+      "name": "Autre",
+      "slug": "immobilier-cherche-location-autre",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "42991562",
+    "title": "Cherche location Appartement F3 Alger Alger centre",
+    "slug": "appartement-cherche-location-f3-alger-centre-algerie",
+    "createdAt": "2024-07-31T16:29:52.582037Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "38350664",
+    "title": "Cherche achat Appartement Alger Alger centre",
+    "slug": "appartement-cherche-achat-alger-centre-algerie",
+    "createdAt": "2023-10-31T14:05:42.350009Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "43772884",
+    "title": "Cherche location Appartement F5 Alger Alger centre",
+    "slug": "appartement-cherche-location-f5-alger-centre-algerie",
+    "createdAt": "2024-09-08T16:40:01.931441Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "41832784",
+    "title": "Cherche achat Appartement F3 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f3-alger-centre-algerie",
+    "createdAt": "2024-06-01T11:35:03.302491Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "37120883",
+    "title": "Cherche achat Appartement F4 Alger Alger centre",
+    "slug": "appartement-cherche-achat-f4-alger-centre-algerie",
+    "createdAt": "2023-08-05T14:19:21.698132Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "94",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-achat-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "37928167",
+    "title": "Cherche achat Villa Alger Alger centre",
+    "slug": "villa-cherche-achat-alger-centre-algerie",
+    "createdAt": "2023-10-03T12:57:10.701480Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "96",
+      "name": "Villa",
+      "slug": "immobilier-cherche-achat-villa",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "40072557",
+    "title": "Cherche location Niveau De Villa Alger Dely brahim",
+    "slug": "niveau-de-villa-cherche-location-alger-dely-brahim-algerie",
+    "createdAt": "2024-03-04T11:17:49.213470Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "109",
+      "name": "Appartement",
+      "slug": "immobilier-cherche-location-appartement",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "580",
+        "name": "Dely brahim",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "39839253",
+    "title": "Cherche location Local Alger Alger centre",
+    "slug": "local-cherche-location-alger-centre-algerie",
+    "createdAt": "2024-02-20T11:08:52.778422Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "113",
+      "name": "Local",
+      "slug": "immobilier-cherche-location-local",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "108",
+          "name": "Cherche location",
+          "slug": "immobilier-cherche-location"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  },
+  {
+    "id": "43667195",
+    "title": "Cherche achat Terrain Alger Alger centre",
+    "slug": "terrain-cherche-achat-alger-centre-algerie",
+    "createdAt": "2024-09-02T16:32:15.951419Z",
+    "status": "PUBLISHED",
+    "price": null,
+    "priceUnit": "MILLION",
+    "pricePreview": 0,
+    "category": {
+      "id": "100",
+      "name": "Terrain",
+      "slug": "immobilier-cherche-achat-terrain",
+      "parentTree": [
+        {
+          "id": "62",
+          "name": "Immobilier",
+          "slug": "immobilier"
+        },
+        {
+          "id": "93",
+          "name": "Cherche achat",
+          "slug": "immobilier-cherche-achat"
+        }
+      ]
+    },
+    "cities": [
+      {
+        "id": "556",
+        "name": "Alger centre",
+        "region": {
+          "id": "16",
+          "name": "Alger"
+        }
+      }
+    ],
+    "defaultMedia": null,
+    "source_page": 5
+  }
+]

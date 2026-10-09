@@ -54,6 +54,7 @@ function PropertiesCatalogContent() {
 
   // Reset page when filters or sorting change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setCurrentPage(1);
   }, [filters, sortBy]);
 

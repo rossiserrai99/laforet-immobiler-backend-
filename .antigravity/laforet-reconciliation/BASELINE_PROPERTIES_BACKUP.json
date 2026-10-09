@@ -1,0 +1,1390 @@
+[
+  {
+    "_id": "6ac81019c5b7e8884199e69b",
+    "title": "Location Appartement F3 Meublé Vue Mer Telemly Alger Centre",
+    "slug": "location-appartement-f3-meuble-vue-mer-telemly-alger-centre",
+    "reference": "LF-OK-56732109",
+    "category": "Appartement",
+    "type": "Location",
+    "status": "Disponible",
+    "price": 150000,
+    "priceHidden": false,
+    "area": 95,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "description": "Location d'un joli appartement F3 meublé de 95 m² situé sur les hauteurs de Telemly (Boulevard Krim Belkacem) à Alger Centre. Situé au 3ème étage d'un immeuble de standing, il offre une vue exceptionnelle et dégagée sur la mer et le port d'Alger. Salon chaleureux, deux chambres meublées avec rangements, cuisine équipée d'électroménagers neufs, balcon. Loyer: 150 000 DA/mois.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Alger Centre",
+      "address": "Telemly (Krim Belkacem)"
+    },
+    "features": [
+      "Vue panoramique port et mer",
+      "Meublé de qualité",
+      "Chauffage individuel",
+      "Balcon filant",
+      "Cuisine équipée avec électroménagers neufs",
+      "Immeuble de standing"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496214908_property_56732109_1_ZcwkgReGZ.webp",
+          "publicId": "6ac81018ead997d09a6d2152",
+          "_id": "6ac81019c5b7e8884199e69c"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496215692_property_56732109_2_q3ltNpXN7.webp",
+          "publicId": "6ac81018ead997d09a6d233c",
+          "_id": "6ac81019c5b7e8884199e69d"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496216473_property_56732109_3_lbNlY_txr.webp",
+          "publicId": "6ac81019ead997d09a6d2637",
+          "_id": "6ac81019c5b7e8884199e69e"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496214908_property_56732109_1_ZcwkgReGZ.webp",
+        "publicId": "6ac81018ead997d09a6d2152"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:17.284Z",
+    "updatedAt": "2026-10-08T21:50:17.284Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac81016c5b7e8884199e694",
+    "title": "Location Villa Diplomatique avec Piscine Val d'Hydra",
+    "slug": "location-villa-diplomatique-avec-piscine-val-dhydra",
+    "reference": "LF-OK-56843210",
+    "category": "Villa",
+    "type": "Location",
+    "status": "Disponible",
+    "price": 750000,
+    "priceHidden": false,
+    "area": 600,
+    "rooms": 8,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "description": "Somptueuse villa de haut standing située dans le quartier hautement sécurisé du Val d'Hydra. Idéale pour résidence d'ambassadeur ou cadre supérieur multinational. Terrain de 600 m² avec piscine extérieure et jardin privatif soigné. Bâti sur 3 niveaux comprenant salons de réception avec cheminée, 5 chambres dont master suite avec dressing et jacuzzi, cuisine professionnelle, logements de service, guérite de sécurité et garage pour 3 véhicules. Loyer: 750 000 DA/mois.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Hydra",
+      "address": "Val d'Hydra"
+    },
+    "features": [
+      "Piscine extérieure",
+      "Jardin arboré sans vis-à-vis",
+      "Guérite de sécurité",
+      "Groupe électrogène",
+      "Bâche à eau 15 000 L",
+      "Garage 3 voitures",
+      "Chauffage central"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496212007_property_56843210_1_fUVz9XmUI.webp",
+          "publicId": "6ac81015ead997d09a6d15f7",
+          "_id": "6ac81016c5b7e8884199e695"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496212832_property_56843210_2_G36qgCWut.webp",
+          "publicId": "6ac81015ead997d09a6d1754",
+          "_id": "6ac81016c5b7e8884199e696"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496213640_property_56843210_3_Om7Xra63w.webp",
+          "publicId": "6ac81016ead997d09a6d1e9f",
+          "_id": "6ac81016c5b7e8884199e697"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496212007_property_56843210_1_fUVz9XmUI.webp",
+        "publicId": "6ac81015ead997d09a6d15f7"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:14.424Z",
+    "updatedAt": "2026-10-08T21:50:14.424Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac81013c5b7e8884199e68d",
+    "title": "Vente Local Commercial 120 m² Axe Principal El Achour",
+    "slug": "vente-local-commercial-120-m-axe-principal-el-achour",
+    "reference": "LF-OK-56954318",
+    "category": "Local Commercial",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 48000000,
+    "priceHidden": false,
+    "area": 120,
+    "bathrooms": 1,
+    "description": "Local commercial de 120 m² en rez-de-chaussée situé sur un axe à très fort trafic à El Achour. Belle vitrine d'angle de 8 mètres offrant une excellente visibilité, rideaux métalliques motorisés, sanitaires, hauteur sous plafond de 4 mètres permettant l'aménagement d'une mezzanine. Parfaitement adapté pour showroom, banque, franchise ou cabinet de groupe. Prix: 48 millions DA.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "El Achour",
+      "address": "Centre El Achour"
+    },
+    "features": [
+      "Vitrine 8 mètres",
+      "Rideaux métalliques motorisés",
+      "Sanitaires",
+      "Hauteur sous plafond 4m",
+      "Axe à fort trafic",
+      "Compteurs individuels"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496209062_property_56954318_1_gNoSzjtip.webp",
+          "publicId": "6ac81012ead997d09a6d0ec9",
+          "_id": "6ac81013c5b7e8884199e68e"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496209880_property_56954318_2_FquHjw0Tb.webp",
+          "publicId": "6ac81013ead997d09a6d1090",
+          "_id": "6ac81013c5b7e8884199e68f"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496210721_property_56954318_3_HV7hNXEZ3.webp",
+          "publicId": "6ac81013ead997d09a6d128e",
+          "_id": "6ac81013c5b7e8884199e690"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496209062_property_56954318_1_gNoSzjtip.webp",
+        "publicId": "6ac81012ead997d09a6d0ec9"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:11.526Z",
+    "updatedAt": "2026-10-08T21:50:11.526Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac81010c5b7e8884199e686",
+    "title": "Vente Appartement F4 Spacieux Proche Métro Hussein Dey",
+    "slug": "vente-appartement-f4-spacieux-proche-metro-hussein-dey",
+    "reference": "LF-OK-57065912",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 24000000,
+    "priceHidden": false,
+    "area": 110,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "description": "Opportunité à Hussein Dey : spacieux appartement F4 de 110 m² au 1er étage d'un immeuble très bien entretenu. Emplacement de premier ordre à deux pas de la station de métro, des écoles et commerces. Grand salon, 3 chambres lumineuses, cuisine moderne, sanitaires rénovés. Acte notarié et livret foncier disponibles. Prix: 24 millions DA négociable.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Hussein Dey",
+      "address": "Hussein Dey Centre"
+    },
+    "features": [
+      "Proche station métro et tramway",
+      "1er étage",
+      "Cuisine rénovée",
+      "Loggia",
+      "Climatisation",
+      "Double vitrage",
+      "Immeuble sécurisé"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496206017_property_57065912_1_EiyN27DXt.webp",
+          "publicId": "6ac8100fead997d09a6d0808",
+          "_id": "6ac81010c5b7e8884199e687"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496206893_property_57065912_2_8sr96rQf4.webp",
+          "publicId": "6ac81010ead997d09a6d0a43",
+          "_id": "6ac81010c5b7e8884199e688"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496207706_property_57065912_3__g0bp-btg.webp",
+          "publicId": "6ac81010ead997d09a6d0c44",
+          "_id": "6ac81010c5b7e8884199e689"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496206017_property_57065912_1_EiyN27DXt.webp",
+        "publicId": "6ac8100fead997d09a6d0808"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:08.566Z",
+    "updatedAt": "2026-10-08T21:50:08.566Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac8100dc5b7e8884199e67f",
+    "title": "Vente Appartement F3 Front de Mer Bab El Oued",
+    "slug": "vente-appartement-f3-front-de-mer-bab-el-oued",
+    "reference": "LF-OK-57180234",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 17000000,
+    "priceHidden": false,
+    "area": 78,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "description": "Vente d'un appartement F3 d'environ 78 m² situé au 2ème étage sur le boulevard front de mer à Bab El Oued. Bénéficie d'une vue directe et imprenable sur le large. Composé d'un séjour donnant sur balcon vue mer, deux chambres, cuisine, salle de bain. Papiers en règle : acte notarié et livret foncier. Prix: 17 millions DA.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Bab El Oued",
+      "address": "Boulevard Front de Mer"
+    },
+    "features": [
+      "Vue mer directe",
+      "Balcon filant",
+      "Lumineux",
+      "Acte notarié",
+      "Livret foncier",
+      "Proche place des Martyrs"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496203102_property_57180234_1_u72v55oqN.webp",
+          "publicId": "6ac8100cead997d09a6cff3b",
+          "_id": "6ac8100dc5b7e8884199e680"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496203885_property_57180234_2_J_130wyDN.webp",
+          "publicId": "6ac8100cead997d09a6d023d",
+          "_id": "6ac8100dc5b7e8884199e681"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496204666_property_57180234_3_rGJK6RYT0.webp",
+          "publicId": "6ac8100dead997d09a6d04b8",
+          "_id": "6ac8100dc5b7e8884199e682"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496203102_property_57180234_1_u72v55oqN.webp",
+        "publicId": "6ac8100cead997d09a6cff3b"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:05.482Z",
+    "updatedAt": "2026-10-08T21:50:05.482Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac8100ac5b7e8884199e678",
+    "title": "Vente Appartement F3 Rénové Vue Panoramique El Madania",
+    "slug": "vente-appartement-f3-renove-vue-panoramique-el-madania",
+    "reference": "LF-OK-57291045",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 22500000,
+    "priceHidden": false,
+    "area": 85,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "description": "À vendre charmant appartement F3 de 85 m² situé au 3ème étage à El Madania dans un immeuble propre et calme. Vue panoramique spectaculaire sur la baie et la ville. Deux chambres confortables, salon lumineux, cuisine avec loggia, salle de bain et WC séparés. Idéalement situé proche des transports en commun et commerces. Prix: 22,5 millions DA.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "El Madania",
+      "address": "El Madania Centre"
+    },
+    "features": [
+      "Vue panoramique sur la baie",
+      "Ensoleillé",
+      "Cuisine semi-équipée",
+      "Chauffage gaz",
+      "Proche téléphérique",
+      "Immeuble propre"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496199692_property_57291045_1_pbapyckch.webp",
+          "publicId": "6ac81009ead997d09a6cf4de",
+          "_id": "6ac8100ac5b7e8884199e679"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496200891_property_57291045_2_qQLCfRt62.webp",
+          "publicId": "6ac8100aead997d09a6cf843",
+          "_id": "6ac8100ac5b7e8884199e67a"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496201752_property_57291045_3_PwKLgDD-M.webp",
+          "publicId": "6ac8100aead997d09a6cfb6d",
+          "_id": "6ac8100ac5b7e8884199e67b"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496199692_property_57291045_1_pbapyckch.webp",
+        "publicId": "6ac81009ead997d09a6cf4de"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:50:02.567Z",
+    "updatedAt": "2026-10-08T21:50:02.567Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ff7c5b7e8884199e671",
+    "title": "Location Appartement F4 Rénové Rue Didouche Mourad",
+    "slug": "location-appartement-f4-renove-rue-didouche-mourad",
+    "reference": "LF-OK-57389104",
+    "category": "Appartement",
+    "type": "Location",
+    "status": "Disponible",
+    "price": 180000,
+    "priceHidden": false,
+    "area": 130,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "description": "Location d'un bel appartement F4 d'une superficie de 130 m² situé au 3ème étage d'un immeuble de style colonial de caractère sur la rue Didouche Mourad. Rénové avec goût alliant charme de l'ancien et confort moderne. Séjour spacieux, 3 chambres, cuisine équipée, salle d'eau rénovée. Convient parfaitement pour profession libérale, cabinet médical, bureau de consultance ou habitation. Loyer: 180 000 DA/mois.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Alger Centre",
+      "address": "Rue Didouche Mourad"
+    },
+    "features": [
+      "Immeuble colonial de caractère",
+      "Double vitrage",
+      "Chauffage central",
+      "Cuisine moderne",
+      "Parquet ancien vitrifié",
+      "Idéal bureau ou habitation"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496181420_property_57389104_1_0JwqZ2ivP.webp",
+          "publicId": "6ac80ff6ead997d09a6cb878",
+          "_id": "6ac80ff7c5b7e8884199e672"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496182216_property_57389104_2_Papq12g5L.webp",
+          "publicId": "6ac80ff7ead997d09a6cbfe9",
+          "_id": "6ac80ff7c5b7e8884199e673"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496182939_property_57389104_3_pJjd05LKg.webp",
+          "publicId": "6ac80ff8ead997d09a6cc343",
+          "_id": "6ac80ff7c5b7e8884199e674"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496181420_property_57389104_1_0JwqZ2ivP.webp",
+        "publicId": "6ac80ff6ead997d09a6cb878"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:49:43.680Z",
+    "updatedAt": "2026-10-08T21:49:43.680Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ff4c5b7e8884199e66a",
+    "title": "Vente Villa R+2 Quartier Résidentiel El Mouradia",
+    "slug": "vente-villa-r2-quartier-residentiel-el-mouradia",
+    "reference": "LF-OK-57541208",
+    "category": "Villa",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 380000000,
+    "priceHidden": false,
+    "area": 450,
+    "rooms": 9,
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "description": "Belle villa R+2 d'une surface de 450 m² de terrain avec 220 m² bâti située dans un quartier calme et hautement sécurisé d'El Mouradia à proximité immédiate des ambassades. Composée de 5 chambres spacieuses, double salon lumineux, cuisine équipée, jardin privatif arboré, garage pour 3 véhicules et bâche à eau. Idéal pour résidence diplomatique ou habitation de standing. Prix: 380 millions DA.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "El Mouradia",
+      "address": "El Mouradia"
+    },
+    "features": [
+      "Jardin privatif",
+      "Garage 3 véhicules",
+      "Chauffage central",
+      "Bâche à eau",
+      "Climatisation",
+      "Quartier diplomatique sécurisé",
+      "R+2"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496178726_property_57541208_1_bE3ZE8-24.webp",
+          "publicId": "6ac80ff3ead997d09a6cb281",
+          "_id": "6ac80ff4c5b7e8884199e66b"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496179468_property_57541208_2_HfZu9Kcy1.webp",
+          "publicId": "6ac80ff4ead997d09a6cb466",
+          "_id": "6ac80ff4c5b7e8884199e66c"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496180217_property_57541208_3_ul2GUr4r5g.webp",
+          "publicId": "6ac80ff5ead997d09a6cb602",
+          "_id": "6ac80ff4c5b7e8884199e66d"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496178726_property_57541208_1_bE3ZE8-24.webp",
+        "publicId": "6ac80ff3ead997d09a6cb281"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:49:40.955Z",
+    "updatedAt": "2026-10-08T21:49:40.955Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ff2c5b7e8884199e665",
+    "title": "Vente Terrain Commercial 638 m² Birkhadem Centre",
+    "slug": "vente-terrain-commercial-638-m-birkhadem-centre",
+    "reference": "LF-OK-57654190",
+    "category": "Terrain",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 250000000,
+    "priceHidden": false,
+    "area": 638,
+    "description": "Vente d'un superbe terrain d'une superficie de 638 m² situé en plein centre de Birkhadem, bénéficiant d'une large façade sur un axe commercial hautement stratégique. Idéal pour investissement commercial, clinique privée, siège de société, hôtel ou projet de promotion immobilière. Papiers en règle avec acte notarié et livret foncier. Prix: 250 millions DA négociable.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Birkhadem",
+      "address": "Birkhadem Centre"
+    },
+    "features": [
+      "Façade commerciale très passante",
+      "Acte notarié",
+      "Livret foncier",
+      "Certificat d'urbanisme",
+      "Idéal clinique / siège / promotion immobilière"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496176715_property_57654190_1_Dn2xtlZPy.webp",
+          "publicId": "6ac80ff1ead997d09a6cac78",
+          "_id": "6ac80ff2c5b7e8884199e666"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496177465_property_57654190_2_DbjevVY2s.webp",
+          "publicId": "6ac80ff2ead997d09a6cae07",
+          "_id": "6ac80ff2c5b7e8884199e667"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496176715_property_57654190_1_Dn2xtlZPy.webp",
+        "publicId": "6ac80ff1ead997d09a6cac78"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:49:38.238Z",
+    "updatedAt": "2026-10-08T21:49:38.238Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ff0c5b7e8884199e65e",
+    "title": "Vente Grand Appartement F3 Résidence Khalifati La Vigérie",
+    "slug": "vente-grand-appartement-f3-residence-khalifati-la-vigerie",
+    "reference": "LF-OK-32402120",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 26000000,
+    "priceHidden": false,
+    "area": 95,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "description": "À vendre grand et joli appartement F3 très ensoleillé situé au 2ème étage dans la résidence fermée et sécurisée Khalifati à La Vigérie, Mohammadia. Emplacement calme et stratégique, proche de toutes commodités, commerces et tramway. Composé d'un séjour lumineux, deux chambres, cuisine aménagée, salle de bain et sanitaires. Chauffage central et place de stationnement. Prix: 26 millions DA.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Mohammadia",
+      "address": "La Vigérie (Résidence Khalifati)"
+    },
+    "features": [
+      "Résidence fermée et sécurisée",
+      "Chauffage central",
+      "Ascenseur",
+      "Parking privatif",
+      "Proche tramway",
+      "Balcon",
+      "Ensoleillé"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496173920_property_32402120_1_3NI_HrUTK.webp",
+          "publicId": "6ac80feeead997d09a6ca4b4",
+          "_id": "6ac80ff0c5b7e8884199e65f"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496174659_property_32402120_2_lN4gI1Kbi.webp",
+          "publicId": "6ac80fefead997d09a6ca71d",
+          "_id": "6ac80ff0c5b7e8884199e660"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496175428_property_32402120_3_pelb2Pwq9.webp",
+          "publicId": "6ac80ff0ead997d09a6ca8ab",
+          "_id": "6ac80ff0c5b7e8884199e661"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496173920_property_32402120_1_3NI_HrUTK.webp",
+        "publicId": "6ac80feeead997d09a6ca4b4"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:49:36.162Z",
+    "updatedAt": "2026-10-08T21:49:36.162Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80fedc5b7e8884199e657",
+    "title": "Vente Appartement de Maître 275 m² Boulevard Zirout Youcef",
+    "slug": "vente-appartement-de-maitre-275-m-boulevard-zirout-youcef",
+    "reference": "LF-OK-57948210",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 165000000,
+    "priceHidden": false,
+    "area": 275,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "description": "Magnifique appartement de maître de 275 m² situé dans un bel immeuble de style haussmannien sur le prestigieux boulevard Zirout Youcef à Alger Centre. Situé au 4ème étage avec ascenseur, très lumineux et ensoleillé, offrant une vue panoramique imprenable sur la mer et la baie d'Alger. Convient parfaitement pour habitation de haut standing ou siège d'entreprise. Prix: 165 millions DA légèrement négociable.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Alger Centre",
+      "address": "Boulevard Zirout Youcef"
+    },
+    "features": [
+      "Immeuble haussmannien",
+      "Ascenseur",
+      "Vue mer et baie d'Alger",
+      "Très ensoleillé",
+      "Chauffage central",
+      "Climatisation",
+      "Double vitrage",
+      "Hauteur sous plafond"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496171146_property_57948210_1_KcQAxNOjz.webp",
+          "publicId": "6ac80fecead997d09a6c9c38",
+          "_id": "6ac80fedc5b7e8884199e658"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496171879_property_57948210_2_qQVLFpdBo.webp",
+          "publicId": "6ac80fecead997d09a6c9eee",
+          "_id": "6ac80fedc5b7e8884199e659"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496172627_property_57948210_3_GHdbj8SxG.webp",
+          "publicId": "6ac80fedead997d09a6ca0af",
+          "_id": "6ac80fedc5b7e8884199e65a"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496171146_property_57948210_1_KcQAxNOjz.webp",
+        "publicId": "6ac80fecead997d09a6c9c38"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-10-08T21:49:33.384Z",
+    "updatedAt": "2026-10-08T21:49:33.384Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80feac5b7e8884199e650",
+    "title": "Vente Résidence de Maître 1400 m² Vue Mer Miramar",
+    "slug": "vente-residence-de-maitre-1400-m-vue-mer-miramar",
+    "reference": "LF-OK-58058031",
+    "category": "Villa",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 210000000,
+    "priceHidden": false,
+    "area": 1400,
+    "rooms": 8,
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "description": "Belle résidence de maître d'une superficie totale de 1400 m² avec 200 m² bâti en R+1 située sur la corniche côté Miramar. Composée de 5 chambres spacieuses, grand salon de réception, jardin arboré sans vis-à-vis et vue panoramique sur mer. Idéal pour résidence diplomatique, consulat ou grande famille. Prix: 210 millions DA (21 milliards centimes) légèrement négociable.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Bologhine",
+      "address": "Miramar"
+    },
+    "features": [
+      "Grand jardin arboré",
+      "Vue sur mer imprenable",
+      "Garage 4 véhicules",
+      "Chauffage central",
+      "Bâche à eau",
+      "Calme absolu",
+      "Bâti 200 m² R+1"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496167603_property_58058031_1_24pZ14dKe.webp",
+          "publicId": "6ac80fe9ead997d09a6c966b",
+          "_id": "6ac80feac5b7e8884199e651"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496168719_property_58058031_2_59lc1ai4z.webp",
+          "publicId": "6ac80fe9ead997d09a6c97b2",
+          "_id": "6ac80feac5b7e8884199e652"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496169550_property_58058031_3_0NhtI6RUc.webp",
+          "publicId": "6ac80feaead997d09a6c9968",
+          "_id": "6ac80feac5b7e8884199e653"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791496167603_property_58058031_1_24pZ14dKe.webp",
+        "publicId": "6ac80fe9ead997d09a6c966b"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Exception",
+    "createdAt": "2026-10-08T21:49:30.429Z",
+    "updatedAt": "2026-10-08T21:49:30.429Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80eacc5b7e8884199e5d6",
+    "title": "Location Duplex de Standing F5 Saint-Raphaël El Biar",
+    "slug": "location-duplex-de-standing-f5-saint-raphael-el-biar",
+    "reference": "LF-OK-56621098",
+    "category": "Duplex",
+    "type": "Location",
+    "status": "Disponible",
+    "price": 280000,
+    "priceHidden": false,
+    "area": 220,
+    "rooms": 5,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "description": "Superbe duplex F5 de 220 m² situé dans le quartier résidentiel paisible de Saint-Raphaël à El Biar. Agencement sur deux niveaux : au premier niveau, vaste salon salle à manger ouvert sur terrasse offrant une vue dégagée, cuisine moderne et salle d'eau invités ; à l'étage, master suite parentale avec salle de bain privative, trois chambres supplémentaires et une salle de bain indépendante. Garage fermé inclus. Loyer: 280 000 DA/mois.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "El Biar",
+      "address": "Saint-Raphaël"
+    },
+    "features": [
+      "Terrasse avec vue dégagée",
+      "Suite parentale avec dressing",
+      "Chauffage central",
+      "Climatisation",
+      "Garage privatif",
+      "Quartier résidentiel calme"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495850139_property_56621098_1_c13sFff74.webp",
+          "publicId": "6ac80eabead997d09a68dd1e",
+          "_id": "6ac80eacc5b7e8884199e5d7"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495850967_property_56621098_2_x3JlOBrso.webp",
+          "publicId": "6ac80eacead997d09a68df4b",
+          "_id": "6ac80eacc5b7e8884199e5d8"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495851729_property_56621098_3_6smS7LPLe.webp",
+          "publicId": "6ac80eacead997d09a68e0af",
+          "_id": "6ac80eacc5b7e8884199e5d9"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495850139_property_56621098_1_c13sFff74.webp",
+        "publicId": "6ac80eabead997d09a68dd1e"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "None",
+    "createdAt": "2026-10-08T21:44:12.480Z",
+    "updatedAt": "2026-10-08T21:44:12.480Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ea9c5b7e8884199e5cf",
+    "title": "Location Appartement Haut Standing F4 Meublé Hydra",
+    "slug": "location-appartement-haut-standing-f4-meuble-hydra",
+    "reference": "LF-OK-57498112",
+    "category": "Appartement",
+    "type": "Location",
+    "status": "Disponible",
+    "price": 350000,
+    "priceHidden": false,
+    "area": 160,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "description": "Superbe appartement F4 de 160 m² entièrement meublé et équipé de haut standing, situé au 2ème étage d'une résidence sécurisée à Hydra. Grand salon salle à manger avec balcon, suite parentale avec salle de bain, deux chambres avec placards, cuisine moderne équipée, climatisation gainable, chauffage central et place de parking privée. Loyer: 350 000 DA/mois.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Hydra",
+      "address": "Val d'Hydra / Sidi Yahia"
+    },
+    "features": [
+      "Meublé de luxe",
+      "Ascenseur",
+      "Chauffage central",
+      "Climatisation gainable",
+      "Parking sous-sol",
+      "Cuisine équipée de marque",
+      "Sécurité 24/7"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495847284_property_57498112_1_SrmHChxQ-i.webp",
+          "publicId": "6ac80ea8ead997d09a68d2d0",
+          "_id": "6ac80ea9c5b7e8884199e5d0"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495848068_property_57498112_2_0ImN1OEI5.webp",
+          "publicId": "6ac80ea9ead997d09a68d48f",
+          "_id": "6ac80ea9c5b7e8884199e5d1"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495848803_property_57498112_3_xbhR-Z1tE.webp",
+          "publicId": "6ac80ea9ead997d09a68d590",
+          "_id": "6ac80ea9c5b7e8884199e5d2"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495847284_property_57498112_1_SrmHChxQ-i.webp",
+        "publicId": "6ac80ea8ead997d09a68d2d0"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-10-08T21:44:09.613Z",
+    "updatedAt": "2026-10-08T21:44:09.613Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ac80ea6c5b7e8884199e5c8",
+    "title": "Vente Villa de Maître 872 m² avec Piscine Quartier Poirson El Biar",
+    "slug": "vente-villa-de-maitre-872-m-avec-piscine-quartier-poirson-el-biar",
+    "reference": "LF-OK-57812904",
+    "category": "Villa",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 650000000,
+    "priceHidden": false,
+    "area": 872,
+    "rooms": 12,
+    "bedrooms": 6,
+    "bathrooms": 5,
+    "description": "Exceptionnelle villa de maître érigée sur un terrain de 872 m² située dans le secteur résidentiel très prisé de Poirson à El Biar. Configuration en sous-sol + R+2 comprenant 3 salons de réception, 6 chambres en suites privatives, hammam traditionnel, sauna, piscine intérieure couverte, jardin paysager arboré et garage pour 4 à 5 véhicules. Prestations luxueuses haut de gamme. Prix: 650 millions DA négociable.",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "El Biar",
+      "address": "Poirson"
+    },
+    "features": [
+      "Piscine couverte",
+      "Hammam",
+      "Sauna",
+      "Grand jardin paysager",
+      "Garage 4-5 véhicules",
+      "Chauffage central",
+      "6 suites parentales",
+      "3 salons spacieux",
+      "Bâche à eau"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495843642_property_57812904_1_EjwMyLCzXD.webp",
+          "publicId": "6ac80ea4ead997d09a68ca9d",
+          "_id": "6ac80ea6c5b7e8884199e5c9"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495844661_property_57812904_2__ie8R5ofg.webp",
+          "publicId": "6ac80ea6ead997d09a68cd2b",
+          "_id": "6ac80ea6c5b7e8884199e5ca"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495845840_property_57812904_3_TsExAIvbp.webp",
+          "publicId": "6ac80ea6ead997d09a68cf15",
+          "_id": "6ac80ea6c5b7e8884199e5cb"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/1791495843642_property_57812904_1_EjwMyLCzXD.webp",
+        "publicId": "6ac80ea4ead997d09a68ca9d"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Exception",
+    "createdAt": "2026-10-08T21:44:06.607Z",
+    "updatedAt": "2026-10-08T21:44:06.607Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a64790241f8e643c378b80b",
+    "title": "appartement a benaknoun",
+    "slug": "appartement-a-benaknoun",
+    "reference": "bn4",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 650000000,
+    "priceHidden": false,
+    "area": 201,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "description": "^rkmolk",
+    "location": {
+      "wilaya": "Alger",
+      "commune": "Bab El Oued",
+      "address": "alkjfhkljn"
+    },
+    "features": [
+      "piscine parking"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/hdyi1iiavab5hwztusfm.webp?updatedAt=1791492969584",
+          "publicId": "6ac80369ead997d09a2c8bae",
+          "_id": "6a64790241f8e643c378b80c"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/hdyi1iiavab5hwztusfm.webp?updatedAt=1791492969584",
+        "publicId": "6ac80369ead997d09a2c8bae"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:51:14.326Z",
+    "updatedAt": "2026-07-26T08:47:06.960Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6478c241f8e643c378b7f1",
+    "title": "appartement moderne",
+    "slug": "appartement-moderne",
+    "reference": "aprtmd5",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 56000000,
+    "priceHidden": false,
+    "area": 550,
+    "rooms": 5,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "description": "sdfpkopo",
+    "location": {
+      "wilaya": "alger",
+      "commune": "hydra",
+      "address": "lfknlk"
+    },
+    "features": [],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/rqfdoly82fljjlb2wy3r.webp?updatedAt=1791492968829",
+          "publicId": "6ac80368ead997d09a2c89a2",
+          "_id": "6a6478c241f8e643c378b7f2"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/rqfdoly82fljjlb2wy3r.webp?updatedAt=1791492968829",
+        "publicId": "6ac80368ead997d09a2c89a2"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:50:10.506Z",
+    "updatedAt": "2026-07-25T08:50:10.506Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a64787641f8e643c378b7d9",
+    "title": "appartement a reghaia",
+    "slug": "appartement-a-reghaia",
+    "reference": "rgh6",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 4521852,
+    "priceHidden": false,
+    "area": 200,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "description": "pefjùmlkj",
+    "location": {
+      "wilaya": "alger",
+      "commune": "reghaia",
+      "address": "lqrfhoi"
+    },
+    "features": [
+      "etg"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/gtqlr3bi1dhzwqbcihy7.webp?updatedAt=1791492968086",
+          "publicId": "6ac80367ead997d09a2c877b",
+          "_id": "6a64787641f8e643c378b7da"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/gtqlr3bi1dhzwqbcihy7.webp?updatedAt=1791492968086",
+        "publicId": "6ac80367ead997d09a2c877b"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:48:54.954Z",
+    "updatedAt": "2026-07-25T08:48:54.954Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a646f3341f8e643c378b735",
+    "title": "appartement de luxe",
+    "slug": "appartement-de-luxe",
+    "reference": "hg5",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 623000000,
+    "priceHidden": false,
+    "area": 240,
+    "rooms": 5,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "description": "fepùoj",
+    "location": {
+      "wilaya": "alger",
+      "commune": "ain naaja",
+      "address": "pzarùji"
+    },
+    "features": [],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/jbl2cv0q83i4sxkpn2up.webp?updatedAt=1791492967286",
+          "publicId": "6ac80366ead997d09a2c857f",
+          "_id": "6a646f3341f8e643c378b736"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/jbl2cv0q83i4sxkpn2up.webp?updatedAt=1791492967286",
+        "publicId": "6ac80366ead997d09a2c857f"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:09:23.501Z",
+    "updatedAt": "2026-07-25T08:09:23.501Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a646ee741f8e643c378b721",
+    "title": "appartement a souidania",
+    "slug": "appartement-a-souidania",
+    "reference": "sou1",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 32500000,
+    "priceHidden": false,
+    "area": 140,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "description": "reopqjfml,",
+    "location": {
+      "wilaya": "alger",
+      "commune": "souidania",
+      "address": "qefkjmlpik"
+    },
+    "features": [
+      "rgrg"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/ahj0fvcifg7kaqmbfksk.webp?updatedAt=1791492966553",
+          "publicId": "6ac80366ead997d09a2c83b0",
+          "_id": "6a646ee741f8e643c378b722"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/ahj0fvcifg7kaqmbfksk.webp?updatedAt=1791492966553",
+        "publicId": "6ac80366ead997d09a2c83b0"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:08:07.999Z",
+    "updatedAt": "2026-07-25T08:08:07.999Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a646e9841f8e643c378b70f",
+    "title": "appartement a dely brahim",
+    "slug": "appartement-a-dely-brahim",
+    "reference": "dely 2",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 25000000,
+    "priceHidden": false,
+    "area": 182,
+    "rooms": 5,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "description": "iomjofiushdf",
+    "location": {
+      "wilaya": "alger",
+      "commune": "dely ibrahim",
+      "address": "qmujgfhhjnMO"
+    },
+    "features": [
+      "poefjpo"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/fxynqhobrao7sdatlowk.webp?updatedAt=1791492965768",
+          "publicId": "6ac80365ead997d09a2c8173",
+          "_id": "6a646e9841f8e643c378b710"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/fxynqhobrao7sdatlowk.webp?updatedAt=1791492965768",
+        "publicId": "6ac80365ead997d09a2c8173"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Apartment",
+    "createdAt": "2026-07-25T08:06:48.555Z",
+    "updatedAt": "2026-07-25T08:06:48.555Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a644a042eb0086f7ca09dca",
+    "title": "appartement a draria",
+    "slug": "appartement-a-draria",
+    "reference": "apprtmn 1",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 25400555,
+    "priceHidden": false,
+    "area": 360,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "description": "jkqhfrkjqn",
+    "location": {
+      "wilaya": "alger",
+      "commune": "draria",
+      "address": "ejshfbh"
+    },
+    "features": [
+      "erkzjnhrhjkqsn"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/bpqsvustybf48paymojb.webp?updatedAt=1791492964975",
+          "publicId": "6ac80364ead997d09a2c7e5a",
+          "_id": "6a644a042eb0086f7ca09dcb"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/bpqsvustybf48paymojb.webp?updatedAt=1791492964975",
+        "publicId": "6ac80364ead997d09a2c7e5a"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Exception",
+    "createdAt": "2026-07-25T05:30:44.695Z",
+    "updatedAt": "2026-07-25T05:30:44.695Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6449bd2eb0086f7ca09dbc",
+    "title": "villa a birkhadem",
+    "slug": "villa-a-birkhadem",
+    "reference": "villa-1",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 421000000,
+    "priceHidden": false,
+    "area": 300,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "description": "qhjfjklhn",
+    "location": {
+      "wilaya": "alger",
+      "commune": "birkhadem",
+      "address": "ezfhjk"
+    },
+    "features": [
+      "fsqfh"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/a5dyeugcf3gzhfpwjtqz.webp?updatedAt=1791492964166",
+          "publicId": "6ac80363ead997d09a2c7c46",
+          "_id": "6a6449bd2eb0086f7ca09dbd"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/a5dyeugcf3gzhfpwjtqz.webp?updatedAt=1791492964166",
+        "publicId": "6ac80363ead997d09a2c7c46"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "homePageSection": "Exception",
+    "createdAt": "2026-07-25T05:29:33.868Z",
+    "updatedAt": "2026-07-25T05:29:33.868Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6439175a68c6c76aafa8cb",
+    "title": "villa a sidi yahya",
+    "slug": "villa-a-sidi-yahya",
+    "reference": "villa sidi yahya",
+    "category": "Villa",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 12000000,
+    "priceHidden": false,
+    "area": 350,
+    "rooms": 8,
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "description": "khdfskbgk",
+    "location": {
+      "wilaya": "alger",
+      "commune": "sidi yahya",
+      "address": "sidi yahya"
+    },
+    "features": [
+      "kjjfkjbkjhbg"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/izqpylvqlheip9cobwyz.webp?updatedAt=1791492963343",
+          "publicId": "6ac80362ead997d09a2c6ec7",
+          "_id": "6a6439175a68c6c76aafa8cc"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/izqpylvqlheip9cobwyz.webp?updatedAt=1791492963343",
+        "publicId": "6ac80362ead997d09a2c6ec7"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "createdAt": "2026-07-25T04:18:31.219Z",
+    "updatedAt": "2026-07-25T05:20:01.939Z",
+    "__v": 0,
+    "homePageSection": "Exception"
+  },
+  {
+    "_id": "6a64361b83da68d33432252e",
+    "title": "appartement a delybrahim",
+    "slug": "appartement-a-delybrahim",
+    "reference": "sdfkbjn",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 60000000,
+    "priceHidden": false,
+    "area": 250,
+    "rooms": 5,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "description": "kjhfnbfu<sdbsdkjufb",
+    "location": {
+      "wilaya": "alger",
+      "commune": "delybrahim",
+      "address": "kjdfhdfskjqsndbkj"
+    },
+    "features": [
+      "esgsdfhgrt"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/hftb4l2hdkc1cnadek45.webp?updatedAt=1791492962523",
+          "publicId": "6ac80362ead997d09a2c6578",
+          "_id": "6a64361b83da68d33432252f"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/hftb4l2hdkc1cnadek45.webp?updatedAt=1791492962523",
+        "publicId": "6ac80362ead997d09a2c6578"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "createdAt": "2026-07-25T04:05:47.340Z",
+    "updatedAt": "2026-07-25T05:20:08.999Z",
+    "__v": 0,
+    "homePageSection": "Exception"
+  },
+  {
+    "_id": "6a642b4783da68d3343224ed",
+    "title": "maison de metre a el biar",
+    "slug": "maison-de-metre-a-el-biar",
+    "reference": "maison de metre",
+    "category": "Villa",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 500000000,
+    "priceHidden": false,
+    "area": 500,
+    "rooms": 12,
+    "bedrooms": 6,
+    "bathrooms": 3,
+    "description": "sdgerhtdydr",
+    "location": {
+      "wilaya": "alger",
+      "commune": "el biar",
+      "address": "dsljhljkhtgguihsedrf"
+    },
+    "features": [
+      "tzrethyrd"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/acwvxzw7u7qyuyatx38s.webp?updatedAt=1791492961749",
+          "publicId": "6ac80361ead997d09a2c627a",
+          "_id": "6a642b4783da68d3343224ee"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/acwvxzw7u7qyuyatx38s.webp?updatedAt=1791492961749",
+        "publicId": "6ac80361ead997d09a2c627a"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "createdAt": "2026-07-25T03:19:35.742Z",
+    "updatedAt": "2026-07-25T05:20:17.850Z",
+    "__v": 0,
+    "homePageSection": "Exception"
+  },
+  {
+    "_id": "6a57a11841701b872192ea2f",
+    "title": "villa a alger",
+    "slug": "villa-a-alger",
+    "reference": "villa",
+    "category": "Appartement",
+    "type": "Vente",
+    "status": "Disponible",
+    "price": 50000000,
+    "priceHidden": true,
+    "area": 350,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "description": "oijsdmokghljkmn",
+    "location": {
+      "wilaya": "alger",
+      "commune": "alger",
+      "address": "ouhgjkdfshkl"
+    },
+    "features": [
+      "zetnlkn",
+      "kd"
+    ],
+    "media": {
+      "images": [
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/fjudyrta5bwvmvqtrauv.webp?updatedAt=1791492959961",
+          "publicId": "6ac8035fead997d09a2c592c",
+          "_id": "6a57a2a1562a757ff1ccf582"
+        },
+        {
+          "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/wrgsxxke7iryvgqcfjh3.webp?updatedAt=1791492960872",
+          "publicId": "6ac80360ead997d09a2c5ed9",
+          "_id": "6a57a2a1562a757ff1ccf583"
+        }
+      ],
+      "coverImage": {
+        "url": "https://ik.imagekit.io/8jggj5dcd7/laforet_properties/fjudyrta5bwvmvqtrauv.webp?updatedAt=1791492959961",
+        "publicId": "6ac8035fead997d09a2c592c"
+      }
+    },
+    "agent": "6a578f80c5966f5d2654d49b",
+    "isFeatured": false,
+    "createdAt": "2026-07-15T15:02:48.641Z",
+    "updatedAt": "2026-07-25T05:20:29.839Z",
+    "__v": 0,
+    "homePageSection": "Exception"
+  }
+]

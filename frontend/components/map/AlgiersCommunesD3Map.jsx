@@ -71,43 +71,40 @@ export default function AlgiersCommunesD3Map({ selectedCommune, onSelectCommune,
       .range([0.08, 0.42]);
   }, [features]);
 
+  const [tooltipStyle, setTooltipStyle] = useState({ left: '0px', top: '0px' });
+
   // Handle mouse move for tooltip positioning
   const handleMouseMove = (e) => {
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
-    setTooltipPos({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    setTooltipPos({ x, y });
 
-  // Smart tooltip positioning clamped to actual container DOM dimensions so it is never hidden behind screen edges
-  const getTooltipStyle = () => {
-    const rect = containerRef.current?.getBoundingClientRect();
-    const containerW = rect?.width || width;
-    const containerH = rect?.height || height;
+    const containerW = rect.width || width;
+    const containerH = rect.height || height;
     const tooltipW = 264; // w-64 is 256px + borders
     const tooltipH = 220;
 
     // Maximum left coordinate to keep tooltip fully inside the right edge
     const maxLeft = Math.max(10, containerW - tooltipW - 12);
-    let left = Math.max(10, Math.min(tooltipPos.x + 16, maxLeft));
+    let left = Math.max(10, Math.min(x + 16, maxLeft));
 
     // On mobile screens (< 640px), if tapping near the right side, position tooltip to the left of touch point
-    if (containerW < 640 && tooltipPos.x > containerW - 170) {
-      left = Math.max(10, Math.min(tooltipPos.x - tooltipW - 12, maxLeft));
+    if (containerW < 640 && x > containerW - 170) {
+      left = Math.max(10, Math.min(x - tooltipW - 12, maxLeft));
       if (left < 10) left = Math.max(10, containerW - tooltipW - 12);
     }
 
-    let top = Math.max(16, tooltipPos.y - 95);
+    let top = Math.max(16, y - 95);
     if (top + tooltipH > containerH - 12) {
       top = Math.max(16, containerH - tooltipH - 12);
     }
 
-    return {
+    setTooltipStyle({
       left: `${left}px`,
       top: `${top}px`,
-    };
+    });
   };
 
   return (
@@ -269,7 +266,7 @@ export default function AlgiersCommunesD3Map({ selectedCommune, onSelectCommune,
       {hoveredCommune && (
         <div
           className="absolute z-50 pointer-events-none transition-all duration-75 ease-out"
-          style={getTooltipStyle()}
+          style={tooltipStyle}
         >
           <div className="w-64 p-4 rounded-xl bg-charcoal-950/85 backdrop-blur-xl border border-white/20 shadow-2xl text-white">
             {/* Tooltip Header */}

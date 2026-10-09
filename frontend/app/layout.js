@@ -106,14 +106,21 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="fr" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html 
+      lang="fr" 
+      data-scroll-behavior="smooth" 
+      className={`${cormorant.variable} ${dmSans.variable}`} 
+      suppressHydrationWarning
+    >
       <head>
+        <link rel="preconnect" href="https://ik.imagekit.io" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/hero_poster.jpg" fetchPriority="high" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans text-charcoal-900 antialiased bg-white">
+      <body className="font-sans text-charcoal-900 antialiased bg-white" suppressHydrationWarning>
         {children}
       </body>
     </html>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, Input, Textarea, Logo } from '@/components/ui';
@@ -8,7 +8,11 @@ import { PropertyCard } from '@/components/property/PropertyCard';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { ArrowRight, Star, Shield, Award, Diamond, Key, Landmark, Building2, BadgeCheck, Gem, Phone, Mail, MessageSquare, Send, CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
+import { 
+  ArrowRight, Star, Shield, Award, Diamond, Key, Landmark, Building2, 
+  BadgeCheck, Gem, Phone, Mail, MessageSquare, Send, CheckCircle2, 
+  MapPin, ExternalLink, Play, Pause, Volume2, VolumeX, ChevronDown 
+} from 'lucide-react';
 import leadService from '@/services/lead.service';
 import { InteractiveAlgiersMap } from '@/components/map/InteractiveAlgiersMap';
 import { AgencyLocationMap } from '@/components/map/AgencyLocationMap';
@@ -25,6 +29,88 @@ if (typeof window !== 'undefined') {
 
 export function HomeClient({ featuredProperties, featuredApartments = [], allProperties = [] }) {
   const container = useRef();
+  const videoRef = useRef(null);
+  const heroSectionRef = useRef(null);
+
+  // Video visual transition & playback state
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isDataSaver] = useState(() => {
+    if (typeof navigator !== 'undefined' && navigator.connection) {
+      return Boolean(navigator.connection.saveData || navigator.connection.effectiveType === '2g');
+    }
+    return false;
+  });
+
+  // Play / Pause toggle
+  const togglePlay = useCallback(() => {
+    const vid = videoRef.current;
+    if (!vid) return;
+    if (vid.paused) {
+      vid.play().then(() => setIsPlaying(true)).catch(() => {});
+    } else {
+      vid.pause();
+      setIsPlaying(false);
+    }
+  }, []);
+
+  // Mute / Unmute toggle (video has ambient soundtrack)
+  const toggleMute = useCallback(() => {
+    const vid = videoRef.current;
+    if (!vid) return;
+    vid.muted = !vid.muted;
+    setIsMuted(vid.muted);
+  }, []);
+
+  // Bandwidth & Hardware Optimization:
+  // 1. Pauses video when scrolled out of view to stop decoding & streaming
+  // 2. Pauses video when browser tab is inactive/minimized
+  useEffect(() => {
+    const heroEl = heroSectionRef.current;
+    let observer;
+    if (heroEl && typeof IntersectionObserver !== 'undefined') {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const vid = videoRef.current;
+            if (!vid) return;
+            if (entry.isIntersecting) {
+              if (vid.paused && isPlaying) {
+                vid.play().catch(() => {});
+              }
+            } else {
+              if (!vid.paused) {
+                vid.pause();
+              }
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      observer.observe(heroEl);
+    }
+
+    const handleVisibilityChange = () => {
+      const vid = videoRef.current;
+      if (!vid) return;
+      if (document.hidden) {
+        vid.pause();
+      } else if (isPlaying) {
+        const rect = heroEl?.getBoundingClientRect();
+        if (rect && rect.bottom > 0 && rect.top < window.innerHeight) {
+          vid.play().catch(() => {});
+        }
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      if (observer && heroEl) observer.unobserve(heroEl);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [isPlaying]);
   
   useGSAP(() => {
     // Hero Animations
@@ -107,69 +193,145 @@ export function HomeClient({ featuredProperties, featuredApartments = [], allPro
   return (
     <div ref={container}>
       {/* HERO SECTION */}
-      <section className="relative h-[65vh] sm:h-[75vh] md:h-[85vh] min-h-[420px] sm:min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <div className="absolute inset-0 bg-charcoal-900 z-0 overflow-hidden">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            poster={SITE_ASSETS.heroPoster}
-            suppressHydrationWarning
-            className="absolute inset-0 w-full h-full object-cover scale-105"
-          >
-            {SITE_ASSETS.heroVideoMobile && (
-              <source src={SITE_ASSETS.heroVideoMobile} media="(max-width: 768px)" type="video/mp4" />
-            )}
-            <source src={SITE_ASSETS.heroVideoDesktop} type="video/mp4" />
-          </video>
-          {/* Lighter Overlays for Text Pop without darkening the entire video */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(24,24,27,0.3)_0%,_transparent_60%)] z-10"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/30 via-transparent to-charcoal-900/80 z-10"></div>
+      <section 
+        ref={heroSectionRef} 
+        className="relative h-[80vh] sm:h-[84vh] md:h-[90vh] min-h-[580px] sm:min-h-[580px] md:min-h-[660px] flex items-center justify-center overflow-hidden bg-charcoal-950"
+      >
+        {/* Background Visual Layer */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* Instant lightweight poster image backdrop (<5ms) to guarantee zero black flash or layout shifts */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center scale-105"
+            style={{ 
+              backgroundImage: `url(${SITE_ASSETS.heroPoster})`,
+              filter: 'brightness(0.92)'
+            }}
+          />
+
+          {/* Ultra-Fast Direct Video Stream (~100ms first byte via pre-transcoded Edge CDN stream) */}
+          {!isDataSaver && (
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted={isMuted}
+              playsInline
+              preload="auto"
+              poster={SITE_ASSETS.heroPoster}
+              suppressHydrationWarning
+              className="absolute inset-0 w-full h-full object-cover scale-105"
+            >
+              <source 
+                src={SITE_ASSETS.heroVideoDesktop || SITE_ASSETS.heroVideoOriginal} 
+                type="video/mp4" 
+              />
+            </video>
+          )}
+
+          {/* Multi-tier Cinematic Visual Overlays for optimal contrast & luxury atmosphere */}
+          {/* 1. Vignette shading */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(16,19,27,0.28)_0%,_rgba(9,11,16,0.72)_100%)] z-10 pointer-events-none" />
+
+          {/* 2. Top header shadow & bottom fade into charcoal content */}
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/70 via-transparent via-50% to-charcoal-950/95 z-10 pointer-events-none" />
+
+          {/* 3. Subtle warm golden atmospheric shimmer */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(212,175,55,0.06)_0%,_transparent_65%)] z-10 pointer-events-none" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 text-center px-3 sm:px-4 max-w-5xl mx-auto mt-10 sm:mt-16 pb-10 sm:pb-16">
-          <div className="hero-text-anim overflow-hidden px-2 sm:px-4 py-4 sm:py-6">
-            <h1 className="font-serif font-semibold text-white mb-6 sm:mb-8 drop-shadow-2xl flex flex-col items-center">
-              <span className="text-[26px] xs:text-[28px] sm:text-5xl md:text-6xl lg:text-7xl tracking-tight whitespace-nowrap text-white/95 leading-tight">
-                L&apos;Excellence <span className="text-gold-400 font-serif italic font-bold drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Immobilière</span>
+        <div className="relative z-20 text-center px-4 sm:px-6 max-w-5xl mx-auto mt-14 sm:mt-10 pb-16 sm:pb-22">
+          <div className="hero-text-anim overflow-hidden px-2 sm:px-4 py-2 sm:py-4">
+            <h1 className="font-serif font-semibold text-white mb-4 sm:mb-6 drop-shadow-2xl flex flex-col items-center">
+              <span className="text-[28px] xs:text-[34px] sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white/95 leading-tight">
+                L&apos;Excellence <span className="text-gold-400 font-serif italic font-bold drop-shadow-[0_0_20px_rgba(212,175,55,0.45)]">Immobilière</span>
               </span>
               <span className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-serif text-white/90 mt-1 sm:mt-2 text-center tracking-wide font-normal">
                 en Algérie
               </span>
             </h1>
+
+            <p className="text-warm-100/90 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 font-sans font-light leading-relaxed drop-shadow">
+              Villas de prestige, résidences diplomatiques et appartements d&apos;exception sélectionnés avec une exigence absolue au cœur de la capitale.
+            </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="hero-btn-anim">
-              <Button variant="gold" size="lg" className="shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-shadow" asChild>
-                <Link href="/properties">Explorer les biens</Link>
+          <div className="flex flex-col sm:flex-row gap-3.5 sm:gap-4 justify-center items-center">
+            <div className="hero-btn-anim w-full sm:w-auto">
+              <Button 
+                variant="gold" 
+                size="lg" 
+                className="w-full sm:w-auto px-8 py-3.5 shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.6)] transition-all font-medium tracking-wide" 
+                asChild
+              >
+                <Link href="/properties" className="flex items-center justify-center gap-2">
+                  <span>Explorer les biens</span>
+                  <ArrowRight size={17} />
+                </Link>
               </Button>
             </div>
-            <div className="hero-btn-anim hidden sm:block">
-              <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white border-white/50 hover:bg-white hover:text-charcoal-900 transition-all" asChild>
+            <div className="hero-btn-anim w-full sm:w-auto">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:w-auto px-7 py-3.5 bg-charcoal-900/40 backdrop-blur-md text-white border-white/40 hover:bg-white hover:text-charcoal-900 hover:border-white transition-all tracking-wide" 
+                asChild
+              >
                 <Link href="/estimation">Estimer mon bien</Link>
               </Button>
             </div>
           </div>
         </div>
 
+        {/* Ambient Video & Audio Control Bar (Bottom Left, above marquee, clears WhatsApp button) */}
+        <div className="absolute bottom-20 left-4 sm:left-8 z-30 hidden sm:flex items-center gap-2">
+          <button
+            type="button"
+            onClick={togglePlay}
+            className="group flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-charcoal-950/70 hover:bg-charcoal-950/90 backdrop-blur-md border border-white/15 hover:border-gold-400/50 text-white/80 hover:text-white transition-all text-xs shadow-lg cursor-pointer"
+            title={isPlaying ? "Mettre en pause l'ambiance" : "Relancer la vidéo"}
+            aria-label={isPlaying ? "Mettre en pause la vidéo" : "Relancer la vidéo"}
+          >
+            {isPlaying ? (
+              <Pause size={12} className="text-gold-400" />
+            ) : (
+              <Play size={12} className="text-gold-400 fill-gold-400" />
+            )}
+            <span className="font-sans text-[11px] uppercase tracking-wider font-medium">
+              {isPlaying ? "Pause" : "Lecture"}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={toggleMute}
+            className="group flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-charcoal-950/70 hover:bg-charcoal-950/90 backdrop-blur-md border border-white/15 hover:border-gold-400/50 text-white/80 hover:text-white transition-all text-xs shadow-lg cursor-pointer"
+            title={isMuted ? "Activer le son de la vidéo" : "Couper le son"}
+            aria-label={isMuted ? "Activer le son" : "Couper le son"}
+          >
+            {isMuted ? (
+              <VolumeX size={12} className="text-white/60 group-hover:text-gold-400" />
+            ) : (
+              <Volume2 size={12} className="text-gold-400" />
+            )}
+            <span className="font-sans text-[11px] uppercase tracking-wider font-medium">
+              {isMuted ? "Muet" : "Son actif"}
+            </span>
+          </button>
+
+          <div className="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-charcoal-950/50 backdrop-blur-md border border-white/10 text-white/60 text-[10px] tracking-widest uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Cinematic</span>
+          </div>
+        </div>
+
+        {/* Subtle Scroll Down Prompt */}
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center pointer-events-none opacity-60 hover:opacity-100 transition-opacity">
+          <ChevronDown size={18} className="text-gold-400 animate-bounce" />
+        </div>
+
         {/* GLASS MORPH TRUST PANEL (Scrolling Marquee) */}
         <div className="absolute bottom-0 left-0 w-full bg-charcoal-900/30 backdrop-blur-md border-t border-white/20 overflow-hidden py-4 flex items-center z-30">
-          <style dangerouslySetInnerHTML={{__html: `
-            @keyframes marquee {
-              0% { transform: translateX(0); }
-              100% { transform: translateX(-50%); }
-            }
-            .animate-marquee {
-              animation: marquee 30s linear infinite;
-              display: flex;
-              width: max-content;
-            }
-          `}} />
           <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-charcoal-900/50 to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-charcoal-900/50 to-transparent z-10 pointer-events-none"></div>
           

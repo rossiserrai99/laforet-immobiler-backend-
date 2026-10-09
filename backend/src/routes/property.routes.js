@@ -13,7 +13,7 @@ router.route('/')
   .get(propertyController.getAllProperties)
   .post(
     authMiddleware.protect, 
-    upload.array('images', 10), 
+    upload.array('images', 25), 
     propertyController.createProperty
   );
 
@@ -22,7 +22,7 @@ router.get('/slug/:slug', propertyController.getProperty);
 router.route('/:id')
   .patch(
     authMiddleware.protect, 
-    upload.array('images', 10), 
+    upload.array('images', 25), 
     propertyController.updateProperty
   )
   .delete(

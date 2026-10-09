@@ -1,0 +1,6 @@
+source_page_number,page_url,listing_count_seen,eligible_sale_count,eligible_rent_count,excluded_count,review_required_count,reviewer,status,notes
+1,https://www.ouedkniss.com/store/5451/agence-laforet/accueil?page=1,20,14,5,1,0,explorer_m1_ouedkniss,COMPLETE,"Verified 20 cards: 14 Vente offers, 5 Location offers, 1 excluded demand listing"
+2,https://www.ouedkniss.com/store/5451/agence-laforet/accueil?page=2,20,4,3,13,0,explorer_m1_ouedkniss,COMPLETE,"Verified 20 cards: 4 Vente offers, 3 Location offers, 13 excluded client search requests"
+3,https://www.ouedkniss.com/store/5451/agence-laforet/accueil?page=3,20,6,2,12,0,explorer_m1_ouedkniss,COMPLETE,"Verified 20 cards: 6 Vente offers, 2 Location offers, 12 excluded client search requests"
+4,https://www.ouedkniss.com/store/5451/agence-laforet/accueil?page=4,20,6,1,13,0,explorer_m1_ouedkniss,COMPLETE,"Verified 20 cards: 6 Vente offers, 1 Location offer, 13 excluded client search requests"
+5,https://www.ouedkniss.com/store/5451/agence-laforet/accueil?page=5,20,1,1,18,0,explorer_m1_ouedkniss,COMPLETE,"Verified 20 cards: 1 Vente offer, 1 Location offer, 18 excluded client search requests"

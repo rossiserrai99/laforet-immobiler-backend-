@@ -88,6 +88,7 @@ export function AdminHeader({ onOpenMobileMenu }) {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allProperties.length, allLeads.length]);
 
   // Close dropdown when clicking outside
